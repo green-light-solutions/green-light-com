@@ -67,3 +67,5 @@ PATHS:
     - "app/assets/js/**/!(app).js"
     - "app/assets/js/app.js"
     # -- ADD CUSTOM PLUGINS JS HERE --
+    - "app/assets/js/topbar.js"
+    - "app/assets/js/smooth-scroll.js"

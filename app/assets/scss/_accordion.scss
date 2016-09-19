@@ -1,0 +1,45 @@
+.accordion {
+	background-color: transparent;
+
+	.accordion-item {
+		.accordion-title {
+			border: 0;
+			border-top: rem-calc(1) solid $medium-gray;
+
+			&:focus {
+				background-color: $white;
+			}
+
+			:last-child:not(.is-active) > & {
+				border-radius: 0;
+			}
+		}
+
+		&:first-child > :first-child,
+		&:last-child > :last-child {
+			border-radius: 0;
+		}
+
+
+
+		&.is-active {
+			.accordion-title {
+				background: $black;
+				padding-bottom: rem-calc(24);
+			}
+		}
+
+		.accordion-content {
+			border: none;
+
+			@include breakpoint(medium) {
+				padding: rem-calc(16 30);
+			}
+
+			@include breakpoint(large) {
+				padding: rem-calc(16 35);
+			}
+		}
+	}
+}
+

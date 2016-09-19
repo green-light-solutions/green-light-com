@@ -1,0 +1,45 @@
+h1 {
+	color: map_get($foundation-palette, primary);
+	margin-bottom: rem-calc(28);
+}
+
+h1, h2, h3 {
+	text-transform: uppercase;
+}
+
+h4 {
+	padding: rem-calc(16 0);
+}
+
+.lead {
+	font-family: 'PosteramaText', $body-font-family;
+	font-weight: 300;
+}
+
+.label {
+	font-family: $body-font-family;
+	font-weight: 700;
+	text-transform: none;
+	font-weight: bold;
+}
+
+ul {
+	margin-bottom: 1.75rem;
+
+	li {
+		display: table;
+
+		&::before {
+			content: '';
+			display: table-cell;
+			padding-right: rem-calc(20);
+			background: url('../img/list-item.svg') no-repeat left rem-calc(12) / rem-calc(11 11);
+		}
+
+
+		@include breakpoint(small only) {
+			text-align: left;
+		}
+	}
+}
+

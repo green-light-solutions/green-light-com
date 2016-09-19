@@ -1,0 +1,15 @@
+.page-footer {
+	padding: rem-calc(36 0);
+
+	img	{
+		width: rem-calc(50);
+
+		@include breakpoint(medium) {
+			width: rem-calc(62);
+		}
+
+		@include breakpoint(large) {
+			width: rem-calc(76);
+		}
+	}
+}

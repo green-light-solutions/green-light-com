@@ -10,7 +10,8 @@
   "homepage": "",
   "dependencies": {
     "foundation-sites": "~6.2.0",
-    "motion-ui": "~1.2.2"
+    "motion-ui": "~1.2.2",
+    "modernizer": "^2.8.2"
   },
   "ignore": [
     "**/.*",

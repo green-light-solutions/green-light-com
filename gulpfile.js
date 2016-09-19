@@ -33,6 +33,14 @@ gulp.task('dev',
 gulp.task('default',
     gulp.series('dev', server, watch));
 
+gulp.task('clean', clean);
+
+gulp.task('javascript', javascript);
+
+gulp.task('copy', copy);
+
+gulp.task('cleanDevCode', cleanDevCode);
+
 // Delete the "dist" folder
 // This happens every time a build starts
 function clean(done) {
