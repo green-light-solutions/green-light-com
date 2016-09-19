@@ -2,7 +2,6 @@
 
 @import 'settings';
 @import 'foundation';
-@import 'motion-ui';
 
 @include foundation-global-styles;
 @include foundation-grid;
@@ -45,9 +44,6 @@
 @include foundation-visibility-classes;
 @include foundation-float-classes;
 // @include foundation-flex-classes;
-
-@include motion-ui-transitions;
-@include motion-ui-animations;
 
 @import "font-face";
 

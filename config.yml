@@ -29,11 +29,12 @@ PATHS:
     - "!app/bower_components/**/*"
     - "!app/assets/{js,scss}"
     - "!app/assets/{js,scss}/**/*"
+
   # Paths to Sass libraries, which can then be loaded with @import
   sass:
     - "app/bower_components/foundation-sites/scss"
-    - "app/bower_components/motion-ui/src"
     # -- ADD CUSTOM PLUGINS SASS HERE --
+
   # Paths to JavaScript libraries, which are compined into one file
   javascript:
     # Libraries requried by Foundation
