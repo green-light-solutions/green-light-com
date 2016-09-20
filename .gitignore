@@ -9,6 +9,7 @@ log/*
 temp/*
 vendor/*
 data/*
+www/cv/*
 !.gitignore
 !.htaccess
 !web.config

@@ -43,26 +43,26 @@
 		});
 	});
 
-	// Job forms
-	$('form.job-form').on('submit', function (e) {
-		var $form = $(this);
-		e.preventDefault();
-		$(this).ajaxSubmit({
-			beforeSubmit: function (arr, $form) {
-				if (!validateEmail(arr[1].value)) {
-					return false;
-				}
-			},
-			success: function () {
-				$form.addClass('hide');
-				$form.next().removeClass('hide');
-			},
-			error: function () {
-				alert('We apologize. An error occurred.');
-			}
-
-		});
-	});
+	// // Job forms
+	// $('form.job-form').on('submit', function (e) {
+	// 	var $form = $(this);
+	// 	e.preventDefault();
+	// 	$(this).ajaxSubmit({
+	// 		beforeSubmit: function (arr, $form) {
+	// 			if (!validateEmail(arr[1].value)) {
+	// 				return false;
+	// 			}
+	// 		},
+	// 		success: function () {
+	// 			$form.addClass('hide');
+	// 			$form.next().removeClass('hide');
+	// 		},
+	// 		error: function () {
+	// 			alert('We apologize. An error occurred.');
+	// 		}
+	//
+	// 	});
+	// });
 
 	// Hash tag functionality
 	function offsetAnchor() {

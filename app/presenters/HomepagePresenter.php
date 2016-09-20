@@ -5,6 +5,8 @@ namespace App\Presenters;
 use App;
 use Mailgun\Mailgun;
 use Nette\Application\UI\Form;
+use Nette\Http\FileUpload;
+use Nette\Utils\Random;
 
 class HomepagePresenter extends BasePresenter
 {
@@ -46,7 +48,7 @@ class HomepagePresenter extends BasePresenter
 	public function createComponentTeamSignUpForm()
 	{
 		$form = $this->teamSignUpFormFactory->create();
-		$form->onSuccess[] = function(Form $form) {
+		$form->onSuccess[] = function (Form $form) {
 			file_put_contents($this->context->parameters['appDir'] . '/../data/team-subscribers.txt', $form->getValues()->email . "\n", FILE_APPEND);
 			$this->redirect('this');
 		};
@@ -54,10 +56,13 @@ class HomepagePresenter extends BasePresenter
 		return $form;
 	}
 
+	/**
+	 * @return Form
+	 */
 	public function createComponentJobForm()
 	{
 		$form = $this->jobFormFactory->create();
-		$form->onSuccess[] = function(Form $form) {
+		$form->onSuccess[] = function (Form $form) {
 			$values = $form->getValues();
 			$postData = [
 				'from' => 'noreply@green-light.com',
@@ -67,7 +72,18 @@ class HomepagePresenter extends BasePresenter
 				'text' => $this->formatJobMessageText($values),
 			];
 
-			$this->mailgun->sendMessage($this->context->parameters['mailgun']['domain'], $postData);
+			$files = [];
+			/** @var FileUpload $cv */
+			$cv = $values->cv;
+			if ($cv->isOk()) {
+				$newName = Random::generate(10) . '.' . pathinfo($cv->getName(), PATHINFO_EXTENSION);
+				$absolutePath = $this->context->parameters['appDir'] . '/../www/cv/' . $newName;
+				$cv->move($absolutePath);
+				$postData['text'] .= 'CV: https://green-light.com/cv/' . $newName;
+			}
+
+			$this->mailgun->sendMessage($this->context->parameters['mailgun']['domain'], $postData, $files);
+			$this->redirect('this');
 		};
 
 		return $form;
@@ -79,7 +95,7 @@ class HomepagePresenter extends BasePresenter
 	public function createComponentContactForm()
 	{
 		$form = $this->contactFormFactory->create();
-		$form->onSuccess[] = function(Form $form) {
+		$form->onSuccess[] = function (Form $form) {
 			$values = $form->getValues();
 			$postData = [
 				'from' => 'noreply@green-light.com',
@@ -116,7 +132,9 @@ class HomepagePresenter extends BasePresenter
 	{
 		$result = 'E-mail: ' . $array['email'] . "\n";
 		$result .= 'Name: ' . $array['name'] . "\n";
+		$result .= 'LinkedIn: ' . $array['linkedInUrl'] . "\n";
 		$result .= 'Message: ' . $array['message'] . "\n";
+
 
 		return $result;
 	}
