@@ -1,8 +1,16 @@
 .idea
 .DS_Store
-app/bower_components
-app/assets/css
-app/assets/video
+www/bower_components
+www/assets/css
 dist/**/*
 node_modules
 
+log/*
+temp/*
+vendor/*
+data/*
+!.gitignore
+!.htaccess
+!web.config
+!.gitkeep
+app/config/config.local.neon

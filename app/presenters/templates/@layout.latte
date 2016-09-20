@@ -1,0 +1,65 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{ifset title}{include title|stripHtml} | {/ifset}Green Light</title>
+
+	<link rel="stylesheet" href="{$basePath}/assets/css/screen.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600,700&subset=latin-ext" rel="stylesheet"
+		  type="text/css">
+
+	<link rel="apple-touch-icon-precomposed" sizes="180x180" href="{$basePath}/assets/img/apple-touch-icon.png">
+	<link rel="shortcut icon" href="{$basePath}/favicon.ico">
+
+	<meta property="og:title" content="{if !empty($position)}Join us | {/if}Green Light" />
+	<meta property="og:type" content="image" />
+	<meta property="og:url" content="{link //this}" />
+	<meta property="og:image" content="{$basePath}/assets/img/{if !empty($position)}o-job-position{else}o-green-light{/if}.png" />
+
+	{block head}{/block}
+</head>
+<body class="text-center medium-text-left">
+
+<!-- Google Tag Manager -->
+<noscript>
+	<iframe src="//www.googletagmanager.com/ns.html?id=GTM-PCRWZW"
+			height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<script>
+	(function (w, d, s, l, i) {
+		w[l] = w[l] || [];
+		w[l].push({
+			'gtm.start': new Date().getTime(), event: 'gtm.js'
+		});
+		var f = d.getElementsByTagName(s)[0],
+				j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+		j.async = true;
+		j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl;
+		f.parentNode.insertBefore(j, f);
+	})(window, document, 'script', 'dataLayer', 'GTM-PCRWZW');</script>
+<!-- End Google Tag Manager -->
+
+<div n:if=$flashes id="flashes" class="container">
+	<div n:foreach="$flashes as $flash" n:class="callout, text-center, $flash->type">{$flash->message}</div>
+</div>
+
+{include 'include/header.latte'}
+{include content}
+
+<!--removeIf(production)-->
+<script src="{$basePath}/bower_components/jquery/dist/jquery.js"></script>
+<script src="{$basePath}/bower_components/foundation-sites/dist/foundation.js"></script>
+<script src="{$basePath}/assets/js/topbar.js"></script>
+<script src="{$basePath}/assets/js/smooth-scroll.js"></script>
+<!--endRemoveIf(production)-->
+
+<script src="{$basePath}/assets/js/netteForms.js"></script>
+<script src="{$basePath}/assets/js/jquery.form.js"></script>
+<script src="{$basePath}/assets/js/app.js"></script>
+
+</body>
+</html>
+

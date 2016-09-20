@@ -1,0 +1,30 @@
+#
+# WARNING: it is CRITICAL that this file & directory are NOT accessible directly via a web browser!
+# https://nette.org/security-warning
+#
+parameters:
+	mailgun:
+		domain: mg.sendit.gl
+		apiKey: key-840a73bbdac6e072a53888292499d028
+	emails:
+		contactForm: martin.kudera@green-light.com
+		jobs: join@green-light.com
+
+application:
+	errorPresenter: Error
+	mapping:
+		*: App\*Module\Presenters\*Presenter
+
+
+session:
+	expiration: 14 days
+
+
+services:
+	- App\Forms\ContactFormFactory
+	- App\Forms\JobFormFactory
+	- App\Forms\FormFactory
+	- App\Forms\TeamSignUpFormFactory
+	- Mailgun\Mailgun(%mailgun.apiKey%)
+
+	router: App\RouterFactory::createRouter

@@ -57,7 +57,7 @@ function copy() {
 // Compile Sass into CSS
 // In production, the CSS is compressed
 function sass() {
-    return gulp.src('app/assets/scss/screen.scss')
+    return gulp.src('www/assets/scss/screen.scss')
         .pipe($.sourcemaps.init())
         .pipe($.sass({
             includePaths: PATHS.sass
@@ -69,7 +69,7 @@ function sass() {
         .pipe($.if(PRODUCTION, $.uncss(UNCSS_OPTIONS)))
         .pipe($.if(PRODUCTION, $.cssnano()))
         .pipe($.if(!PRODUCTION, $.sourcemaps.write('./')))
-        .pipe($.if(!PRODUCTION, gulp.dest('app/assets/css')))
+        .pipe($.if(!PRODUCTION, gulp.dest('www/assets/css')))
         .pipe($.if(PRODUCTION, gulp.dest(PATHS.dist + '/assets/css')))
         .pipe(browser.reload({ stream: true }));
 }
@@ -108,10 +108,9 @@ function reload(done) {
 
 // Watch for changes to static assets, pages, Sass, and JavaScript
 function watch() {
-    gulp.watch('app/*.html').on('change', gulp.series(browser.reload));
-    gulp.watch('app/assets/scss/**/*.scss', sass);
-    gulp.watch('app/assets/js/**/*.js').on('change', gulp.series(browser.reload));
-    gulp.watch('app/assets/img/**/*').on('change', gulp.series(browser.reload));
+    gulp.watch('www/assets/scss/**/*.scss', sass);
+    gulp.watch('www/assets/js/**/*.js').on('change', gulp.series(browser.reload));
+    gulp.watch('www/assets/img/**/*').on('change', gulp.series(browser.reload));
 }
 
 gulp.task(cleanDevCode);

@@ -15,7 +15,7 @@
 //@include foundation-badge;
 //@include foundation-breadcrumbs;
 //@include foundation-button-group;
-//@include foundation-callout;
+@include foundation-callout;
 @include foundation-close-button;
 @include foundation-menu;
 @include foundation-menu-icon;
@@ -62,7 +62,6 @@
 
 @import "helpers";
 
-
 .hero {
 	padding-top: rem-calc(77);
 }
@@ -77,4 +76,20 @@
 
 .contact {
 	background: map_get($foundation-palette, primary) url('../img/contact-bg.jpg') no-repeat center top / cover;
+}
+
+#tracy-debug-bar {
+	li { display: inline; padding-right: 0; background: none; }
+}
+
+#signUp {
+	.thank-section {
+		.button { margin-top: rem-calc(40px) }
+	}
+}
+
+#flashes { margin-top: rem-calc(100px) }
+
+#ourTeam {
+	.thank-you-section { margin: rem-calc(50px) rem-calc(30px) }
 }
