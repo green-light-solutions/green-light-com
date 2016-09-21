@@ -5,14 +5,14 @@ var didScroll;
 var lastScrollTop = 0;
 var delta = 5;
 var navbarHeight = $navbar.outerHeight();
-var mobileView = $(window).width() <= 1024;
+var mobileView = $(window).width() < 1024;
 
 $(window).scroll(function(event){
 	didScroll = true;
 });
 
 $(window).resize(function () {
-	mobileView = $(window).width() <= 1024;
+	mobileView = $(window).width() < 1024;
 });
 
 setInterval(function() {
