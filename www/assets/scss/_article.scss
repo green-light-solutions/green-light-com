@@ -66,6 +66,13 @@
 
 		.label {
 			margin-top: rem-calc(32);
+			
+			&--team {
+				background: transparent;
+				color: map_get($brand-pallete, team);
+				padding: 0;
+				font-size: rem-calc(16);
+			}
 		}
 	}
 

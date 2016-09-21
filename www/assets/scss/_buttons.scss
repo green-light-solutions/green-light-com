@@ -20,3 +20,20 @@
 .button-transparent {
 	background: transparentize($white, .8);
 }
+
+.button-sendit {
+	background: map_get($brand-pallete, sendit);
+	color: $white;
+
+	&:hover {
+		background: transparentize(map_get($brand-pallete, sendit), .25);
+	}
+}
+.button-team {
+	background: map_get($brand-pallete, team);
+	color: $white;
+
+	&:hover {
+		background: transparentize(map_get($brand-pallete, team), .25);
+	}
+}

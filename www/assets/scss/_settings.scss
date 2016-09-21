@@ -59,6 +59,11 @@ $foundation-palette: (
 	warning: #ffae00,
 	alert: #ec5840,
 );
+$brand-pallete: (
+	greenlight: map_get($foundation-palette, primary),
+	sendit: #23d9e2,
+	team: #f99f00,
+);
 $body-background: $white;
 $body-font-color: $black;
 $body-font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
