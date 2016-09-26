@@ -10,90 +10,90 @@
 	}
 }
 
-	.hero__title {
-		color: $black;
-		font-size: rem-calc(44);
-		padding: rem-calc(16 50 24 50);
+.hero__title {
+	color: $black;
+	font-size: rem-calc(44);
+	padding: rem-calc(16 50 24 50);
+	margin-bottom: 0;
+
+	@include breakpoint(medium) {
+		font-size: rem-calc(80);
+		padding: rem-calc(16 50 32 50);
+	}
+
+	@include breakpoint(large) {
+		font-size: rem-calc(100);
+		padding: rem-calc(16 50 48 50);
+	}
+}
+
+.hero__nav {
+	ul {
+		text-align: center;
 		margin-bottom: 0;
 
-		@include breakpoint(medium) {
-			font-size: rem-calc(80);
-			padding: rem-calc(16 50 32 50);
-		}
-
-		@include breakpoint(large) {
-			font-size: rem-calc(100);
-			padding: rem-calc(16 50 48 50);
-		}
-	}
-
-	.hero__nav {
-		ul {
-			text-align: center;
-			margin-bottom: 0;
-
-			li {
-				display: inline-block;
-				width: 100%;
-				max-width: rem-calc(145);
-				margin: rem-calc(0 4);
-
-				@include breakpoint(medium) {
-					max-width: rem-calc(200);
-					margin: rem-calc(0 10);
-				}
-
-				@include breakpoint(large) {
-					max-width: rem-calc(230);
-				}
-			}
-
-			a {
-				width: 100%;
-			}
-		}
-	}
-
-	.hero__proclaim {
-
-		@include breakpoint(medium) {
-			padding: rem-calc(30 0 17 0);
-		}
-
-		@include breakpoint(large) {
-			padding: rem-calc(80 0 67 0);
-		}
-
-		img {
-			width: rem-calc(60);
-			height: rem-calc(60);
+		li {
+			display: inline-block;
+			width: 100%;
+			max-width: rem-calc(145);
+			margin: rem-calc(0 4);
 
 			@include breakpoint(medium) {
-				width: rem-calc(100);
-				height: rem-calc(100);
+				max-width: rem-calc(200);
+				margin: rem-calc(0 10);
+			}
+
+			@include breakpoint(large) {
+				max-width: rem-calc(230);
 			}
 		}
 
-		blockquote {
+		a {
+			width: 100%;
+		}
+	}
+}
 
-			p {
-				&::before,
-				&::after {
-					content: '"';
-				}
-			}
+.hero__proclaim {
 
-			cite {
-				font-weight: 600;
-				font-style: normal;
+	@include breakpoint(medium) {
+		padding: rem-calc(30 0 17 0);
+	}
 
-				&::before {
-					display: none;
-				}
-			}
+	@include breakpoint(large) {
+		padding: rem-calc(80 0 67 0);
+	}
+
+	img {
+		width: rem-calc(60);
+		height: rem-calc(60);
+
+		@include breakpoint(medium) {
+			width: rem-calc(100);
+			height: rem-calc(100);
 		}
 	}
 
-		.hero__photo {
-			margin-top: rem-calc(25);
+	blockquote {
+
+		p {
+			&::before,
+			&::after {
+				content: '"';
+			}
 		}
+
+		cite {
+			font-weight: 600;
+			font-style: normal;
+
+			&::before {
+				display: none;
+			}
+		}
+	}
+}
+
+.hero__photo {
+	margin-top: rem-calc(25);
+}
