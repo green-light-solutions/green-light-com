@@ -56,6 +56,7 @@
 			success: function () {
 				$form.addClass('hide');
 				$form.next().removeClass('hide');
+				fbq('track', 'Lead');
 			},
 			error: function () {
 				alert('We apologize. An error occurred.');
