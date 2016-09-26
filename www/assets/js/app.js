@@ -80,7 +80,16 @@
 	window.setTimeout(offsetAnchor, 10);
 
 	// Intro video
-	$('#intro-video')[0].play();
+	var $introVideo = $('#intro-video');
+	$introVideo.on('canplay canplaythrough', function() {
+		if ($(document).width() < 1024) {
+			return;
+		}
+
+		$('.video-wrapper').css('background-image', 'none');
+		$introVideo.removeClass('hide');
+		$introVideo.get(0).play();
+	});
 })(jQuery);
 
 
