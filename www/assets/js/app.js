@@ -78,6 +78,9 @@
 	}
 
 	window.setTimeout(offsetAnchor, 10);
+
+	// Intro video
+	$('#intro-video')[0].play();
 })(jQuery);
 
 
@@ -89,18 +92,3 @@ function validateEmail(email) {
 	var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 	return re.test(email);
 }
-
-(function () {
-	/**
-	 * Video element
-	 * @type {HTMLElement}
-	 */
-	var video = document.getElementById("intro-video");
-
-	/**
-	 * Check if video can play, and play it
-	 */
-	video.addEventListener("canplay", function () {
-		video.play();
-	});
-})();
