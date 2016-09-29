@@ -70,3 +70,4 @@ PATHS:
     # -- ADD CUSTOM PLUGINS JS HERE --
     - "www/assets/js/topbar.js"
     - "www/assets/js/smooth-scroll.js"
+    - "www/bower_components/cookieconsent2/build/cookieconsent.min.js"

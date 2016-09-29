@@ -7,6 +7,7 @@
 	<title>{ifset title}{include title|stripHtml} | {/ifset}Green Light</title>
 
 	<link rel="stylesheet" href="{$basePath}/assets/css/screen.css">
+	<link rel="stylesheet" href="{$basePath}/bower_components/cookieconsent2/build/dark-bottom.css">
 
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600,700&subset=latin-ext" rel="stylesheet"
 		  type="text/css">
@@ -52,6 +53,8 @@
 <!--removeIf(production)-->
 <script src="{$basePath}/bower_components/jquery/dist/jquery.js"></script>
 <script src="{$basePath}/bower_components/foundation-sites/dist/foundation.js"></script>
+<script src="{$basePath}/assets/js/cookieconsent-options.js"></script>
+<script src="{$basePath}/bower_components/cookieconsent2/build/cookieconsent.min.js"></script>
 <script src="{$basePath}/assets/js/topbar.js"></script>
 <script src="{$basePath}/assets/js/smooth-scroll.js"></script>
 <!--endRemoveIf(production)-->

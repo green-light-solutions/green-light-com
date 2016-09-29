@@ -1,0 +1,29 @@
+.cc_banner.cc_container {
+
+  background: #191919;
+  text-align: center;
+  font-size: 15px;
+
+  a,
+  a:visited {
+    color: map_get($foundation-palette, primary);
+  }
+
+  .cc_btn {
+  margin-right: 20px;
+    padding: .5rem .5rem;
+    float: none;
+    display: inline-block;
+  }
+
+  .cc_btn,
+  .cc_btn:visited {
+    background: map_get($foundation-palette, primary);
+    color: white;
+  }
+
+  .cc_message {
+    margin-top: .5rem;
+    display: inline-block;
+  }
+}
