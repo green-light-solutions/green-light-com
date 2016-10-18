@@ -1,5 +1,45 @@
-.cc_banner.cc_container {
+.cookies-hero {
+  position: relative;
+  padding: rem-calc(100 0);
 
+  h1 {
+    position: relative;
+    z-index: 2;
+    color: $body-font-color;
+  }
+
+  p {
+    position: relative;
+
+    .cookies-hero-perex {
+      position: relative;
+      z-index: 2;
+    }
+
+    .cookies-hero-bg {
+      position: absolute;
+      z-index: 1;
+      top: -132px;
+      left: -133px;
+      height: 262px;
+      width: 267px;
+      background: transparent url('../img/cookie.png') no-repeat center center;
+    }
+  }
+}
+
+.cookies {
+  padding: rem-calc(100 0);
+  background: $light-gray;
+
+  .main-links {
+    a {
+      font-weight: $global-weight-bold;
+    }
+  }
+}
+
+.cc_banner.cc_container {
   background: #191919;
   text-align: center;
   font-size: 15px;
