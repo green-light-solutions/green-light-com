@@ -8,6 +8,11 @@ require __DIR__ . '/../vendor/autoload.php';
 $configurator = new Nette\Configurator;
 
 $configurator->setDebugMode(['10.10.10.1']);
+
+if (isset($_ENV['DEBUG']) && $_ENV['DEBUG']) {
+	$configurator->setDebugMode(TRUE);
+}
+
 $configurator->enableDebugger(__DIR__ . '/../log', 'martin.mika@green-light.com');
 
 $configurator->setTimeZone('Europe/Prague');

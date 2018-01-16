@@ -17,9 +17,9 @@ UNCSS_OPTIONS:
 # Gulp will reference these paths when it copies files
 PATHS:
   # Path to dist folder
-  dist: "dist"
+  dist: "www"
   # Path to dev folder
-  dev: "app"
+  dev: "www"
   # Path to clean up dev files
   cleanup: "dist/**/*"
   # Paths to static assets that aren't CSS, or JavaScript

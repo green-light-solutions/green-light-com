@@ -22,7 +22,7 @@ function loadConfig() {
 }
 
 // Build the "dist" folder by running all of the below tasks
-gulp.task('build', gulp.series(clean, gulp.parallel(sass, javascript, copy), cleanDevCode));
+gulp.task('build', gulp.series(gulp.parallel(sass, javascript)));
 
 // Dev task
 gulp.task('dev',
@@ -65,7 +65,6 @@ function sass() {
             browsers: COMPATIBILITY
         }))
         // Comment in the pipe below to not run UnCSS in production
-        .pipe($.if(PRODUCTION, $.uncss(UNCSS_OPTIONS)))
         .pipe($.if(PRODUCTION, $.cssnano()))
         .pipe($.if(!PRODUCTION, $.sourcemaps.write('./')))
         .pipe($.if(!PRODUCTION, gulp.dest('www/assets/css')))

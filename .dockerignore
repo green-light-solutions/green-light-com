@@ -6,13 +6,13 @@ www/assets/app.js
 dist/**/*
 node_modules
 
-log/*
-temp/*
+log
+temp
 vendor/*
 data/*
 www/cv/*
-!.gitignore
+.gitignore
 !.htaccess
 !web.config
-!.gitkeep
+.gitkeep
 app/config/config.local.neon
