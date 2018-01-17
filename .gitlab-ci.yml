@@ -1,0 +1,19 @@
+stages:
+  - build
+  - release
+
+build:
+  stage: build
+  script:
+    - docker build --build-arg COMPOSER_ARG=--no-dev -t docker-registry.touch2shop.com/gls-web:latest -f ./docker/Dockerfile .
+  only:
+    - docker
+
+release:
+  stage: release
+  script:
+    - docker system prune -f
+    - docker login -u $REGISTRY_LOGIN -p $REGISTRY_PASSWORD docker-registry.touch2shop.com
+    - docker push docker-registry.touch2shop.com/gls-web:latest
+  only:
+    - docker
