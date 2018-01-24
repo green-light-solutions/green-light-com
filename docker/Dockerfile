@@ -11,6 +11,7 @@ RUN apt-get update \
     && rm -rf /var/lib/apt/lists/*
 
 ARG COMPOSER_ARG=""
+ARG BOWER_ARG=""
 
 # configs
 COPY docker/files/etc/ /etc/
@@ -36,7 +37,7 @@ RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" \
     && php -r "unlink('composer-setup.php');" \
     && php composer.phar install $COMPOSER_ARG \
     && npm install \
-    && bower install --allow-root \
+    && bower install --allow-root $BOWER_ARG \
     && mkdir -p -m 777 temp log
 
 # copy rest of app
