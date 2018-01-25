@@ -1,6 +1,13 @@
 stages:
   - build
   - release
+  - deploy
+
+before_script:
+  - docker login -u $REGISTRY_LOGIN -p $REGISTRY_PASSWORD docker-registry.green-light.com
+
+after_script:
+  - docker system prune -f
 
 build:
   stage: build
@@ -12,8 +19,16 @@ build:
 release:
   stage: release
   script:
-    - docker system prune -f
-    - docker login -u $REGISTRY_LOGIN -p $REGISTRY_PASSWORD docker-registry.green-light.com
     - docker push docker-registry.green-light.com/green-light/gls-web:latest
   only:
     - docker
+
+
+deploy:
+  stage: deploy
+  script:
+    - docker pull docker-registry.green-light.com/green-light/gls-web:latest
+    - docker service update --force --image=docker-registry.green-light.com/green-light/gls-web:latest gls-web_web
+    - docker system prune -f
+
+
