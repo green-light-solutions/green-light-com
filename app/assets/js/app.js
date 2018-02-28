@@ -1,9 +1,6 @@
 import 'bootstrap';
 import $ from 'jquery';
 
-import './fontawesome.min';
-import './fa-regular.min';
-import './fa-brands.min';
 import './svg-inject';
 import './progress-bar';
 import './smooth-scroll';
