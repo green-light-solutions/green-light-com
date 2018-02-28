@@ -4,25 +4,9 @@
 	font-size: .75rem;
 	line-height: 1.25;
 
-	&:before {
-		content: '';
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		z-index: 2;
-		background-color: transparentize($black, .5);
-		transition: background-color 300ms ease-out;
-	}
-
 	&:hover {
 		text-decoration: none;
 		color: $white;
-
-		&:before {
-			background-color: transparent;
-		}
 
 		.product__logo svg .icon {
 			fill: $white;

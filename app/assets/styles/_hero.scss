@@ -33,6 +33,10 @@
 		a {
 			border-bottom: 1px solid theme-color(primary);
 
+			&:hover {
+				text-decoration: none;
+			}
+
 			@include media-breakpoint-up(sm) {
 				border-bottom-width: 2px;
 			}
