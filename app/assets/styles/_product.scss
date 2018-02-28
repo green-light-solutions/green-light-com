@@ -1,8 +1,10 @@
 .product {
+	position: relative;
 	padding: 1rem 1.25rem;
 	color: $white;
 	font-size: .75rem;
 	line-height: 1.25;
+	background-position: center top !important;
 
 	&:hover {
 		text-decoration: none;
@@ -15,6 +17,11 @@
 
 	&.product--right {
 		text-align: right;
+
+		.product__link {
+			left: 0;
+			right: 1.25rem;
+		}
 	}
 
 	@each $product, $color in $product-colors {
@@ -42,9 +49,6 @@
 		font-weight: 300;
 	}
 
-	.product__link {
-		margin-bottom: 1.125rem;
-	}
 
 	.product__logo,
 	.product__text,
@@ -54,6 +58,10 @@
 	}
 
 	.product__link {
+		position: absolute;
+		bottom: 2rem;
+		left: 1.25rem;
+
 		span {
 			border-bottom: 1px solid $white;
 		}
@@ -82,9 +90,30 @@
 	}
 }
 
+@include media-breakpoint-up(md) {
+	.product {
+		padding: 2.5rem 1.5rem 3.75rem;
+		height: 100%;
+
+		.product__link {
+			position: absolute;
+			bottom: 2.5rem;
+			left: 1.5rem;
+		}
+
+		&.product--right {
+			.product__link {
+				left: 0;
+				right: 1.5rem;
+			}
+		}
+	}
+}
+
 @include media-breakpoint-up(lg) {
 	.product {
-		padding: 2.5rem 3.75rem;
+		padding-left: 3.75rem;
+		padding-right: 3.75rem;
 
 		.product__logo {
 			svg {
@@ -97,20 +126,28 @@
 		}
 
 		.product__text {
+			position: absolute;
+			top: 50%;
+			left: 3.75rem;
 			font-size: 1.375rem;
 			line-height: 1.3;
 			margin-bottom: 4.125rem;
-			padding-right: 23%;
 		}
 
 		.product__link {
 			font-size: 1rem;
+			left: 3.75rem;
+			bottom: 3.5rem;
 		}
 
 		&.product--right {
 			.product__text {
-				padding-left: 23%;
-				padding-right: 0;
+				left: 0;
+				right: 3.75rem;
+			}
+
+			.product__link {
+				right: 3.75rem;
 			}
 		}
 	}
@@ -134,16 +171,3 @@
 	}
 }
 
-@include media-breakpoint-up(xl) {
-	.product {
-		&.product--right {
-			.product__text {
-				padding-right: 0;
-				padding-left: 15%;
-			}
-		}
-		.product__text {
-			padding-right: 15%;
-		}
-	}
-}
