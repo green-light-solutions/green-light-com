@@ -11,6 +11,7 @@
 	.perex {
 		font-size: 1rem;
 		line-height: 1.5;
+		color: $gray-600;
 	}
 
 	@include media-breakpoint-up(lg) {

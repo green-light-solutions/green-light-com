@@ -1,3 +1,37 @@
 .contact {
-	padding-top: 10rem;
+	padding: 9.375rem 0;
+
+	.contact__box {
+		border: 1px solid $gray-600;
+		padding: 4.375rem 1rem 0;
+		margin-top: 4.375rem;
+
+		p {
+			margin-bottom: 2rem;
+		}
+
+		.col-12 {
+			padding: 0 2.25rem 5rem;
+		}
+	}
+
+	.contact__title {
+		color: $white;
+		margin-bottom: 2rem;
+	}
+
+	.contact__text {
+		font-size: 1.125rem;
+		line-height: 1.5;
+		color: $gray-600;
+		text-shadow: 0 1px 2px 0 transparentize($black, .5);
+
+		a {
+			color: $white;
+		}
+	}
+
+	.contact__link {
+
+	}
 }
