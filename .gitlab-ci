@@ -1,0 +1,38 @@
+image: docker:latest
+
+variables:
+  DOCKER_DRIVER: overlay2
+
+services:
+  - docker:dind
+
+stages:
+  - build
+  - deploy
+
+before_script:
+    - docker login -u "$DOCKER_LOGIN" -p "$DOCKER_PASSWORD" docker-registry.green-light.com
+    - DEV_TAG="docker-registry.green-light.com/green-light/green-light.com:latest-dev"
+    - PROD_TAG="docker-registry.green-light.com/green-light/green-light.com:latest"
+
+build-dev:
+  stage: build
+  script:
+    - docker build --pull -t "$DEV_TAG" .
+    - docker push "$DEV_TAG"
+  tags:
+    - docker
+    - vshosting-cluster
+  only:
+    - dev
+
+#deploy-dev:
+#  stage: deploy
+#  script:
+#    - docker pull "$DEV_TAG"
+#    - docker service update --with-registry-auth --image $(docker inspect --type image --format '{{index .RepoDigests 0}}' $DEV_TAG) green-light-dev_web
+#  tags:
+#    - docker
+#    - vshosting-cluster
+#  only:
+#    - dev
