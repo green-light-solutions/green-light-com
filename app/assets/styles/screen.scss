@@ -1,0 +1,48 @@
+@font-face {
+	font-family: 'WorkSans';
+	src: url('../fonts/WorkSans-Light.woff');
+	src: url('../fonts/WorkSans-Light.woff2') format('woff2'),
+	url('../fonts/WorkSans-Light.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'WorkSans';
+	src: url('../fonts/WorkSans-Regular.woff');
+	src: url('../fonts/WorkSans-Regular.woff2') format('woff2'),
+	url('../fonts/WorkSans-Regular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'WorkSans';
+	src: url('../fonts/WorkSans-Medium.woff');
+	src: url('../fonts/WorkSans-Medium.woff2') format('woff2'),
+	url('../fonts/WorkSans-Medium.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@import "~bootstrap/scss/functions";
+@import "settings";
+@import "~bootstrap/scss/bootstrap";
+
+@import "utils";
+@import "navbar";
+@import "buttons";
+
+@import "hero";
+@import "products";
+@import "people";
+@import "footer";
+
+body {
+	position: relative;
+}
+
+*:focus,
+button:focus {
+	outline: none;
+}

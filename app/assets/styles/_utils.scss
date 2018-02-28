@@ -1,0 +1,32 @@
+.full-height {
+	height: 100vh;
+}
+
+.title {
+	line-height: 1.2;
+	font-weight: 500;
+}
+
+.perex {
+	font-size: .75rem;
+	line-height: 1.5;
+}
+
+.bg-medium-gray {
+	background-color: $gray-800;
+}
+
+.text-medium-gray {
+	color: $gray-500;
+}
+
+@include media-breakpoint-up(lg) {
+	.title {
+		font-size: 2.625rem;
+		margin-bottom: 2.5rem;
+	}
+
+	.perex {
+		font-size: 1.25rem;
+	}
+}

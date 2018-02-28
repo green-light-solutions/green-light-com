@@ -1,0 +1,44 @@
+.scrollbox {
+	display: flex;
+	flex-wrap: nowrap;
+	overflow-x: auto;
+	-webkit-overflow-scrolling: touch;
+
+	.person {
+		flex: 0 0 90%;
+		max-width: 26.25rem;
+	}
+}
+
+.person {
+	position: relative;
+	height: 26.25rem;
+	margin-bottom: 1rem;
+	padding: 2.875rem 2.625rem 2.625rem;
+	background-color: $gray-200;
+
+	&:nth-child(even) {
+		background-color: $white;
+	}
+
+	.person__details {
+		position: absolute;
+		bottom: 2.625rem;
+		left: 2.625rem;
+		font-size: .875rem;
+	}
+
+	.person__name {
+		font-size: 1rem;
+		font-weight: $font-weight-bold;
+	}
+
+	.person__social {
+		font-size: 1.375rem;
+
+		.nav-link {
+			padding-left: 0;
+			padding-right: 1.125rem;
+		}
+	}
+}
