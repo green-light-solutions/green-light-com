@@ -2,6 +2,9 @@
 	.modal-content {
 		border-radius: 0;
 		padding-bottom: 5.625rem;
+		background-image: url('../images/svg/modal-bg.svg');
+		background-repeat: no-repeat;
+		background-position: right bottom;
 	}
 
 	a {
