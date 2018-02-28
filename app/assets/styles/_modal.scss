@@ -5,9 +5,13 @@
 		background-image: url('../images/svg/modal-bg.svg');
 		background-repeat: no-repeat;
 		background-position: right bottom;
+		font-size: 1.125rem;
+		line-height: 1.5;
+		font-weight: $font-weight-bold;
 	}
 
 	a {
 		text-decoration: underline;
+		font-size: 1.25rem;
 	}
 }
