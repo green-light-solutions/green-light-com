@@ -1,3 +1,31 @@
+html, body {
+	position: relative;
+	height: 100%;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+.content {
+	flex: 1 0 auto;
+
+	> section {
+		position: relative;
+	}
+}
+
+.main-footer {
+	flex-shrink: 0;
+}
+
+*:focus,
+button:focus {
+	outline: none;
+}
+
+
 .full-height {
 	height: 100vh;
 }
@@ -10,3 +38,7 @@
 	color: $gray-500;
 }
 
+.anchor {
+	position: absolute;
+	top: -3.75rem;
+}

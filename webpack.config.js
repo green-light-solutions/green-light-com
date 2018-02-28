@@ -123,8 +123,8 @@ module.exports = (env) => {
       }),
 
       new HtmlWebpackPlugin({
-        filename: 'loop.html',
-        template: './loop.html',
+        filename: 'contact.html',
+        template: './contact.html',
       }),
 
       new webpack.ProvidePlugin({

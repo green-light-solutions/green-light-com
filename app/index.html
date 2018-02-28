@@ -10,7 +10,8 @@
 </head>
 <body data-spy="scroll"
       data-offset="60"
-      data-target="#mainNav">
+      data-target="#mainNav"
+      class="homepage">
 <nav id="mainNav"
      class="navbar navbar-expand-md fixed-top navbar-dark">
   <a class="navbar-brand"
@@ -70,346 +71,350 @@
       </li>
       <li class="nav-item">
         <a class="nav-link"
-           href="#">Contact</a>
+           href="contact.html">Contact</a>
       </li>
     </ul>
   </div>
 </nav>
 
-<section id="home"
-         class="hero text-center text-white full-height">
-  <div class="fullscreen-bg">
-    <video id="bgVideo"
-           loop
-           muted
-           autoplay
-           poster="assets/images/video-poster.jpg"
-           class="fullscreen-bg__video">
-      <source src="assets/video/bg-video.mp4"
-              type="video/mp4">
-    </video>
-  </div>
-  <div class="container d-flex flex-column align-items-center h-100 justify-content-center">
-    <div id="progressCounter"
-         class="percentage"
-         style="width: 100%;">0%
+<div class="content">
+  <section id="home"
+           class="hero text-center text-white full-height">
+    <div class="fullscreen-bg">
+      <video id="bgVideo"
+             loop
+             muted
+             autoplay
+             poster="assets/images/video-poster.jpg"
+             class="fullscreen-bg__video">
+        <source src="assets/video/bg-video.mp4"
+                type="video/mp4">
+      </video>
     </div>
-    <div class="progress mr-auto ml-auto"
-         style="width: 100%;">
-      <div id="progressBar"
-           class="progress-bar"
-           role="progressbar"
-           aria-valuenow="0"
-           aria-valuemin="0"
-           aria-valuemax="100"></div>
+    <div class="container d-flex flex-column align-items-center h-100 justify-content-center">
+      <div id="progressCounter"
+           class="percentage"
+           style="width: 100%;">0%
+      </div>
+      <div class="progress mr-auto ml-auto"
+           style="width: 100%;">
+        <div id="progressBar"
+             class="progress-bar"
+             role="progressbar"
+             aria-valuenow="0"
+             aria-valuemin="0"
+             aria-valuemax="100"></div>
+      </div>
+      <p class="lead">
+        People spend too much time waiting for their life to&nbsp;happen.<br>
+        We believe to live means to <a href="#products">move&nbsp;on&nbsp;&rarr;</a>
+      </p>
     </div>
-    <p class="lead">
-      People spend too much time waiting for their life to&nbsp;happen.<br>
-      We believe to live means to <a href="#products">move&nbsp;on&nbsp;&rarr;</a>
-    </p>
-  </div>
-</section>
+  </section>
 
-<section id="products"
-         class="bg-dark">
-  <div class="products quadro">
-    <header class="text-center products__header quadro__header">
-      <div class="gls">
-        <img src="assets/images/svg/greenlight-g.svg"
-             alt=""
-             class="img-svg">
-      </div>
-      <h2 class="title">We build apps for<br> people who have better<br> things to do</h2>
-      <div class="button"><a href="#"
-                             class="link">About Greenlight</a></div>
-    </header>
-    <div class="row no-gutters">
-      <div class="col-12 col-md-6">
-        <a href="#"
-           class="product product--loop quadro__item">
-          <div class="product__logo">
-            <img src="./assets/images/svg/loop.svg"
-                 alt="LOOP.gl"
-                 class="img-svg">
-          </div>
-          <div class="product__text">
-            “Now I can share big files<br>
-            and collaborate in one space”
-          </div>
-          <div class="product__link">
-            <span>See Loop.gl</span>
-          </div>
-        </a>
-      </div>
-      <div class="col-12 col-md-6">
-        <a href="#"
-           class="product product--quest product--right quadro__item">
-          <div class="product__logo">
-            <img src="./assets/images/svg/quest.svg"
-                 alt="QUEST.gl"
-                 class="img-svg">
-          </div>
-          <div class="product__text">
-            “Finally, I can build a better<br>
-            team, connected by skills and<br>
-            a real sense of purpose”
-          </div>
-          <div class="product__link">
-            Coming soon
-          </div>
-        </a>
-      </div>
-      <div class="col-12 col-md-6">
-        <a href="#"
-           class="product product--voice quadro__item">
-          <div class="product__logo">
-            <img src="./assets/images/svg/voice.svg"
-                 alt="VOICE.gl"
-                 class="img-svg">
-          </div>
-          <div class="product__text">
-            “Now I get the latest brand stories,<br>delivered to me here, in store”
-          </div>
-          <div class="product__link">
-            Coming soon
-          </div>
-        </a>
-      </div>
-      <div class="col-12 col-md-6">
-        <a href="#"
-           class="product product--beat product--right quadro__item">
-          <div class="product__logo">
-            <img src="./assets/images/svg/beat.svg"
-                 alt="BEAT.gl"
-                 class="img-svg">
-          </div>
-          <div class="product__text">
-            “Awesome, company stuff that<br>I actually want to see”
-          </div>
-          <div class="product__link">
-            Coming soon
-          </div>
-        </a>
-      </div>
-    </div>
-  </div>
-  <div class="brands container text-center text-white">
-    <div class="row">
-      <div class="header col-12 col-md-6 ml-md-auto mr-md-auto">
-        <h2 class="title">
-          We’ve grown up
-          working with the best. </h2>
-      </div>
-      <div class="logos col-12">
-        <picture>
-          <source media="(min-width: 992px)"
-                  srcset="assets/images/brands/brands-lg.svg">
-          <source media="(min-width: 576px)"
-                  srcset="assets/images/brands/brands-md.svg">
-          <img src="assets/images/brands/brands-sm.svg">
-        </picture>
-      </div>
-      <div class="text col-12 col-lg-6 ml-lg-auto mr-lg-auto">
-        <p class="perex">
-          Collaborating, designing and developing apps
-          with some of the world's leading brands. </p>
-      </div>
-      <div class="button col-12 text-center">
-        <button class="btn btn-outline-light"
-                data-toggle="modal"
-                data-target="#letsTalkModal">
-          Let’s talk&nbsp;<i class="fas fa-arrow-right"></i>
-        </button>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="us"
-         class="bg-dark">
-  <div class="quadro">
-    <header class="text-center quadro__header">
-      <h2 class="title">We build<br>
-        what moves us</h2>
-      <p class="perex">We are an international team
-        of tech pioneers, creatives and coding wizards making the human and technology relationship
-        a better experience.</p>
-      <div class="button"><a href="#"
-                             class="link">Meet us</a></div>
-    </header>
-    <div class="row no-gutters">
-      <div class="col-12 col-lg-6">
-        <div class="quadro__item">
-
+  <section class="bg-dark">
+    <div id="products"
+         class="anchor"></div>
+    <div class="products quadro">
+      <header class="text-center products__header quadro__header">
+        <div class="gls">
+          <img src="assets/images/svg/greenlight-g.svg"
+               alt=""
+               class="img-svg">
         </div>
-      </div>
-      <div class="col-12 col-lg-6">
-        <div class="quadro__item">
-
+        <h2 class="title">We build apps for<br> people who have better<br> things to do</h2>
+        <div class="button"><a href="#"
+                               class="link">About Greenlight</a></div>
+      </header>
+      <div class="row no-gutters">
+        <div class="col-12 col-md-6">
+          <a href="#"
+             class="product product--loop quadro__item">
+            <div class="product__logo">
+              <img src="./assets/images/svg/loop.svg"
+                   alt="LOOP.gl"
+                   class="img-svg">
+            </div>
+            <div class="product__text">
+              “Now I can share big files<br>
+              and collaborate in one space”
+            </div>
+            <div class="product__link">
+              <span>See Loop.gl</span>
+            </div>
+          </a>
         </div>
-      </div>
-      <div class="col-12 col-lg-6">
-        <div class="quadro__item">
-
+        <div class="col-12 col-md-6">
+          <a href="#"
+             class="product product--quest product--right quadro__item">
+            <div class="product__logo">
+              <img src="./assets/images/svg/quest.svg"
+                   alt="QUEST.gl"
+                   class="img-svg">
+            </div>
+            <div class="product__text">
+              “Finally, I can build a better<br>
+              team, connected by skills and<br>
+              a real sense of purpose”
+            </div>
+            <div class="product__link">
+              Coming soon
+            </div>
+          </a>
         </div>
-      </div>
-      <div class="col-12 col-lg-6">
-        <div class="quadro__item">
-
+        <div class="col-12 col-md-6">
+          <a href="#"
+             class="product product--voice quadro__item">
+            <div class="product__logo">
+              <img src="./assets/images/svg/voice.svg"
+                   alt="VOICE.gl"
+                   class="img-svg">
+            </div>
+            <div class="product__text">
+              “Now I get the latest brand stories,<br>delivered to me here, in store”
+            </div>
+            <div class="product__link">
+              Coming soon
+            </div>
+          </a>
+        </div>
+        <div class="col-12 col-md-6">
+          <a href="#"
+             class="product product--beat product--right quadro__item">
+            <div class="product__logo">
+              <img src="./assets/images/svg/beat.svg"
+                   alt="BEAT.gl"
+                   class="img-svg">
+            </div>
+            <div class="product__text">
+              “Awesome, company stuff that<br>I actually want to see”
+            </div>
+            <div class="product__link">
+              Coming soon
+            </div>
+          </a>
         </div>
       </div>
     </div>
-  </div>
+    <div class="brands container text-center text-white">
+      <div class="row">
+        <div class="header col-12 col-md-6 ml-md-auto mr-md-auto">
+          <h2 class="title">
+            We’ve grown up
+            working with the best. </h2>
+        </div>
+        <div class="logos col-12">
+          <picture>
+            <source media="(min-width: 992px)"
+                    srcset="assets/images/brands/brands-lg.svg">
+            <source media="(min-width: 576px)"
+                    srcset="assets/images/brands/brands-md.svg">
+            <img src="assets/images/brands/brands-sm.svg">
+          </picture>
+        </div>
+        <div class="text col-12 col-lg-6 ml-lg-auto mr-lg-auto">
+          <p class="perex">
+            Collaborating, designing and developing apps
+            with some of the world's leading brands. </p>
+        </div>
+        <div class="button col-12 text-center">
+          <button class="btn btn-outline-light"
+                  data-toggle="modal"
+                  data-target="#letsTalkModal">
+            Let’s talk&nbsp;<i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <div class="people">
-    <header class="header text-center text-white">
-      <h2 class="title">Get inspired by our people</h2>
-    </header>
-    <div class="scrollbox"
-         id="peopleSlider">
-      <div class="person">
-        <div class="person__quote">
-          “This website needs to be delivered by Wednesday”
-        </div>
-        <div class="person__details">
-          <div class="person__name">Tomas Baca</div>
-          <div class="person__job">CEO, Founder</div>
-          <div class="person__social">
-            <nav class="nav">
-              <a class="nav-link"
-                 href="#"><i class="fab fa-linkedin"></i></a>
-            </nav>
+  <section class="bg-dark">
+    <div id="us"
+         class="anchor"></div>
+    <div class="quadro">
+      <header class="text-center quadro__header">
+        <h2 class="title">We build<br>
+          what moves us</h2>
+        <p class="perex">We are an international team
+          of tech pioneers, creatives and coding wizards making the human and technology relationship
+          a better experience.</p>
+        <div class="button"><a href="#"
+                               class="link">Meet us</a></div>
+      </header>
+      <div class="row no-gutters">
+        <div class="col-12 col-lg-6">
+          <div class="quadro__item">
+
           </div>
         </div>
-      </div>
-      <div class="person">
-        <div class="person__quote">
-          “People are talking about future of everything, we should talk about now. Instruments and solutions of the future already exist.”
-        </div>
-        <div class="person__details">
-          <div class="person__name">Alzbeta Mateju</div>
-          <div class="person__job">Innovation Strategist</div>
-          <div class="person__social">
-            <nav class="nav">
-              <a class="nav-link"
-                 href="#"><i class="fab fa-linkedin"></i></a>
-              <a class="nav-link"
-                 href="#"><i class="fab fa-twitter"></i></a>
-            </nav>
+        <div class="col-12 col-lg-6">
+          <div class="quadro__item">
+
           </div>
         </div>
-      </div>
-      <div class="person">
-        <div class="person__quote">
-          “Skate to where the puck is going to be, not where it has been”
-        </div>
-        <div class="person__details">
-          <div class="person__name">Boris Kovac</div>
-          <div class="person__job">
-            Delivering harsh truth<br>
-            since 1984
-          </div>
-          <div class="person__social">
-            <nav class="nav">
-              <a class="nav-link"
-                 href="#"><i class="fab fa-linkedin"></i></a>
-            </nav>
+        <div class="col-12 col-lg-6">
+          <div class="quadro__item">
+
           </div>
         </div>
-      </div>
-      <div class="person">
-        <div class="person__quote">
-          “Skate to where the puck is going to be, not where it has been”
-        </div>
-        <div class="person__details">
-          <div class="person__name">Lukas Pohanka</div>
-          <div class="person__job">Graphic designer</div>
-          <div class="person__social">
-            <nav class="nav">
-              <a class="nav-link"
-                 href="#"><i class="fab fa-linkedin"></i></a>
-              <a class="nav-link"
-                 href="#"><i class="fab fa-instagram"></i></a>
-              <a class="nav-link"
-                 href="#"><i class="fab fa-twitter"></i></a>
-            </nav>
+        <div class="col-12 col-lg-6">
+          <div class="quadro__item">
+
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <div id="jobs"
-       class="jobs text-center">
-    <header class="header text-white">
-      <h2 class="title">Join the Force</h2>
-    </header>
-    <div class="jobs__image d-flex justify-content-center align-items-center">
-      <div>
-        <a href="#"
-           class="btn btn-outline-light">See open positions&nbsp;<i class="fas fa-arrow-right"></i></a>
+    <div class="people">
+      <header class="header text-center text-white">
+        <h2 class="title">Get inspired by our people</h2>
+      </header>
+      <div class="scrollbox"
+           id="peopleSlider">
+        <div class="person">
+          <div class="person__quote">
+            “This website needs to be delivered by Wednesday”
+          </div>
+          <div class="person__details">
+            <div class="person__name">Tomas Baca</div>
+            <div class="person__job">CEO, Founder</div>
+            <div class="person__social">
+              <nav class="nav">
+                <a class="nav-link"
+                   href="#"><i class="fab fa-linkedin"></i></a>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div class="person">
+          <div class="person__quote">
+            “People are talking about future of everything, we should talk about now. Instruments and solutions of the future already exist.”
+          </div>
+          <div class="person__details">
+            <div class="person__name">Alzbeta Mateju</div>
+            <div class="person__job">Innovation Strategist</div>
+            <div class="person__social">
+              <nav class="nav">
+                <a class="nav-link"
+                   href="#"><i class="fab fa-linkedin"></i></a>
+                <a class="nav-link"
+                   href="#"><i class="fab fa-twitter"></i></a>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div class="person">
+          <div class="person__quote">
+            “Skate to where the puck is going to be, not where it has been”
+          </div>
+          <div class="person__details">
+            <div class="person__name">Boris Kovac</div>
+            <div class="person__job">
+              Delivering harsh truth<br>
+              since 1984
+            </div>
+            <div class="person__social">
+              <nav class="nav">
+                <a class="nav-link"
+                   href="#"><i class="fab fa-linkedin"></i></a>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div class="person">
+          <div class="person__quote">
+            “Skate to where the puck is going to be, not where it has been”
+          </div>
+          <div class="person__details">
+            <div class="person__name">Lukas Pohanka</div>
+            <div class="person__job">Graphic designer</div>
+            <div class="person__social">
+              <nav class="nav">
+                <a class="nav-link"
+                   href="#"><i class="fab fa-linkedin"></i></a>
+                <a class="nav-link"
+                   href="#"><i class="fab fa-instagram"></i></a>
+                <a class="nav-link"
+                   href="#"><i class="fab fa-twitter"></i></a>
+              </nav>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="jobs__text text-white">
-      For more info about our culture and values visit our profile on <a href="#">Cocuma</a>
-    </div>
-  </div>
-</section>
 
-<footer class="main-footer bg-medium-gray">
-  <div class="container">
-    <div class="row no-gutters text-center text-lg-left">
-      <div class="logo col-12 col-lg-3">
-        <img src="assets/images/svg/greenlight-white.svg"
-             alt="GREENLIGHT"
-             class="img-svg">
+    <div id="jobs"
+         class="jobs text-center">
+      <header class="header text-white">
+        <h2 class="title">Join the Force</h2>
+      </header>
+      <div class="jobs__image d-flex justify-content-center align-items-center">
+        <div>
+          <a href="#"
+             class="btn btn-outline-light">See open positions&nbsp;<i class="fas fa-arrow-right"></i></a>
+        </div>
       </div>
-      <div class="menu col-12 col-sm-6 col-md-4 col-lg-2">
-        <div class="menu__title">Products</div>
-        <nav class="nav flex-column">
-          <a class="nav-link"
-             href="#">Loop</a>
-          <a class="nav-link"
-             href="#">Quest</a>
-          <a class="nav-link"
-             href="#">Voice</a>
-          <a class="nav-link"
-             href="#">Beat</a>
-        </nav>
-      </div>
-      <div class="menu col-12 col-sm-6 col-md-4 col-lg-2">
-        <div class="menu__title">Greenlight</div>
-        <nav class="nav flex-column">
-          <a class="nav-link"
-             href="#">Our Story</a>
-          <a class="nav-link"
-             href="#">Jobs</a>
-          <a class="nav-link"
-             href="#">Contact</a>
-        </nav>
-      </div>
-      <div class="address text-medium-gray col-12 col-md-4 col-lg-3">
-        <span>Green Light Solutions s.r.o.</span>
-        <span>Vyskočilova 1561/4A,</span>
-        <span>140 00 Prague 4,</span>
-        <span>Czech Republic</span>
-        <span><a href="mailto:info@green-light.com">info@green-light.com</a></span>
-      </div>
-      <div class="menu menu--horizontal col-12 col-lg-2">
-        <nav class="nav justify-content-center">
-          <a class="nav-link"
-             href="#"><i class="fab fa-linkedin"></i></a>
-          <a class="nav-link"
-             href="#"><i class="fab fa-twitter"></i></a>
-          <a class="nav-link"
-             href="#"><i class="fab fa-facebook"></i></a>
-          <a class="nav-link"
-             href="#"><i class="fab fa-instagram"></i></a>
-        </nav>
+      <div class="jobs__text text-white">
+        For more info about our culture and values visit our profile on <a href="#">Cocuma</a>
       </div>
     </div>
-  </div>
-</footer>
+  </section>
+
+  <footer class="main-footer bg-medium-gray">
+    <div class="container">
+      <div class="row no-gutters text-center text-lg-left">
+        <div class="logo col-12 col-lg-3">
+          <img src="assets/images/svg/greenlight-white.svg"
+               alt="GREENLIGHT"
+               class="img-svg">
+        </div>
+        <div class="menu col-12 col-sm-6 col-md-4 col-lg-2">
+          <div class="menu__title">Products</div>
+          <nav class="nav flex-column">
+            <a class="nav-link"
+               href="#">Loop</a>
+            <a class="nav-link"
+               href="#">Quest</a>
+            <a class="nav-link"
+               href="#">Voice</a>
+            <a class="nav-link"
+               href="#">Beat</a>
+          </nav>
+        </div>
+        <div class="menu col-12 col-sm-6 col-md-4 col-lg-2">
+          <div class="menu__title">Greenlight</div>
+          <nav class="nav flex-column">
+            <a class="nav-link"
+               href="#">Our Story</a>
+            <a class="nav-link"
+               href="#">Jobs</a>
+            <a class="nav-link"
+               href="#">Contact</a>
+          </nav>
+        </div>
+        <div class="address text-medium-gray col-12 col-md-4 col-lg-3">
+          <span>Green Light Solutions s.r.o.</span>
+          <span>Vyskočilova 1561/4A,</span>
+          <span>140 00 Prague 4,</span>
+          <span>Czech Republic</span>
+          <span><a href="mailto:info@green-light.com">info@green-light.com</a></span>
+        </div>
+        <div class="menu menu--horizontal col-12 col-lg-2">
+          <nav class="nav justify-content-center">
+            <a class="nav-link"
+               href="#"><i class="fab fa-linkedin"></i></a>
+            <a class="nav-link"
+               href="#"><i class="fab fa-twitter"></i></a>
+            <a class="nav-link"
+               href="#"><i class="fab fa-facebook"></i></a>
+            <a class="nav-link"
+               href="#"><i class="fab fa-instagram"></i></a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
 
 <div class="modal fade"
      id="letsTalkModal"
