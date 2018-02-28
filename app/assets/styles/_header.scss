@@ -2,6 +2,10 @@
 	.title {
 		line-height: 1.2;
 		font-weight: 500;
+
+		&:only-child {
+			margin: 6.25rem 0;
+		}
 	}
 
 	.perex {
