@@ -10,7 +10,8 @@ RUN apt-get update \
 
 WORKDIR /var/www
 
-COPY docker/nginx.conf /etc/nginx/nginx.conf
+COPY docker/default.conf /etc/nginx/conf.d/default.conf
+COPY docker/site-default.conf /etc/nginx/sites-available/default
 
 COPY . ./
 
