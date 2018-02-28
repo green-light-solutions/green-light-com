@@ -1,34 +1,4 @@
-.products {
-	.products__header {
-		background-color: $white;
-		padding: 2.25rem 1rem 2rem;
-
-		.gls {
-			margin-bottom: 2.125rem;
-
-			svg {
-				width: 4.375rem;
-				height: 4.375rem;
-			}
-		}
-
-		.title {
-			margin-bottom: 2rem;
-		}
-		.button {
-			margin-top: 2rem;
-		}
-		.link {
-			font-size: 1.125rem;
-			line-height: 1.55;
-			text-decoration: underline;
-		}
-	}
-}
-
 .product {
-	position: relative;
-	display: block;
 	padding: 1rem 1.25rem;
 	color: $white;
 	font-size: .75rem;
@@ -128,51 +98,8 @@
 	}
 }
 
-@include media-breakpoint-down(sm) {
-	.products {
-		.title br {
-			display: none;
-		}
-	}
-}
-
 @include media-breakpoint-up(lg) {
-	.products {
-		position: relative;
-
-		.products__header {
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			flex-direction: column;
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			margin-top: -14.0625rem;
-			margin-left: -14.0625rem;
-			padding: 2.125rem;
-			z-index: 4;
-			width: 28.125rem;
-			height: 28.125rem;
-			border-radius: 100%;
-
-			.gls {
-				margin-bottom: 3.125rem;
-			}
-
-			.title {
-				font-size: 1.875rem;
-				margin-bottom: 3.75rem;
-			}
-
-			.perex {
-				color: $gray-900;
-			}
-		}
-	}
-
 	.product {
-		height: 27.5rem;
 		padding: 2.5rem 3.75rem;
 
 		.product__logo {

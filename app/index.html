@@ -12,7 +12,7 @@
       data-offset="60"
       data-target="#mainNav">
 <nav id="mainNav"
-     class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
+     class="navbar navbar-expand-md fixed-top navbar-dark">
   <a class="navbar-brand"
      href="/">
     <img src="assets/images/svg/greenlight.svg"
@@ -112,8 +112,8 @@
 
 <section id="products"
          class="bg-dark">
-  <div class="products">
-    <header class="text-center products__header">
+  <div class="products quadro">
+    <header class="text-center products__header quadro__header">
       <div class="gls">
         <img src="assets/images/svg/greenlight-g.svg"
              alt=""
@@ -126,7 +126,7 @@
     <div class="row no-gutters">
       <div class="col-12 col-md-6">
         <a href="#"
-           class="product product--loop">
+           class="product product--loop quadro__item">
           <div class="product__logo">
             <img src="./assets/images/svg/loop.svg"
                  alt="LOOP.gl"
@@ -143,7 +143,7 @@
       </div>
       <div class="col-12 col-md-6">
         <a href="#"
-           class="product product--quest product--right">
+           class="product product--quest product--right quadro__item">
           <div class="product__logo">
             <img src="./assets/images/svg/quest.svg"
                  alt="QUEST.gl"
@@ -161,7 +161,7 @@
       </div>
       <div class="col-12 col-md-6">
         <a href="#"
-           class="product product--voice">
+           class="product product--voice quadro__item">
           <div class="product__logo">
             <img src="./assets/images/svg/voice.svg"
                  alt="VOICE.gl"
@@ -177,7 +177,7 @@
       </div>
       <div class="col-12 col-md-6">
         <a href="#"
-           class="product product--beat product--right">
+           class="product product--beat product--right quadro__item">
           <div class="product__logo">
             <img src="./assets/images/svg/beat.svg"
                  alt="BEAT.gl"
@@ -195,7 +195,7 @@
   </div>
   <div class="brands container text-center text-white">
     <div class="row">
-      <div class="header col-12 col-md-7 ml-md-auto mr-md-auto">
+      <div class="header col-12 col-md-6 ml-md-auto mr-md-auto">
         <h2 class="title">
           We’ve grown up
           working with the best. </h2>
@@ -215,10 +215,11 @@
           with some of the world's leading brands. </p>
       </div>
       <div class="button col-12 text-center">
-        <a href="#"
-           class="btn btn-outline-light">
+        <button class="btn btn-outline-light"
+                data-toggle="modal"
+                data-target="#letsTalkModal">
           Let’s talk&nbsp;<i class="fas fa-arrow-right"></i>
-        </a>
+        </button>
       </div>
     </div>
   </div>
@@ -226,8 +227,8 @@
 
 <section id="us"
          class="bg-dark">
-  <div class="products">
-    <header class="text-center products__header">
+  <div class="quadro">
+    <header class="text-center quadro__header">
       <h2 class="title">We build<br>
         what moves us</h2>
       <p class="perex">We are an international team
@@ -238,22 +239,22 @@
     </header>
     <div class="row no-gutters">
       <div class="col-12 col-lg-6">
-        <div class="product product--loop">
+        <div class="quadro__item">
 
         </div>
       </div>
       <div class="col-12 col-lg-6">
-        <div class="product product--quest product--right">
+        <div class="quadro__item">
 
         </div>
       </div>
       <div class="col-12 col-lg-6">
-        <div class="product product--voice">
+        <div class="quadro__item">
 
         </div>
       </div>
       <div class="col-12 col-lg-6">
-        <div class="product product--beat product--right">
+        <div class="quadro__item">
 
         </div>
       </div>
@@ -261,8 +262,8 @@
   </div>
 
   <div class="people">
-    <header class="text-center text-white">
-      <h2>Get inspired by our people</h2>
+    <header class="header text-center text-white">
+      <h2 class="title">Get inspired by our people</h2>
     </header>
     <div class="scrollbox"
          id="peopleSlider">
@@ -339,15 +340,17 @@
   </div>
 
   <div id="jobs"
-       class="">
-    <header class="text-white">
-      <h2>Join the Force</h2>
+       class="jobs text-center">
+    <header class="header text-white">
+      <h2 class="title">Join the Force</h2>
     </header>
-    <div class="">
-      <a href="#"
-         class="btn btn-outline-light">See open positions&nbsp;<i class="fas fa-arrow-right"></i></a>
+    <div class="jobs__image d-flex justify-content-center align-items-center">
+      <div>
+        <a href="#"
+           class="btn btn-outline-light">See open positions&nbsp;<i class="fas fa-arrow-right"></i></a>
+      </div>
     </div>
-    <div class="text-white">
+    <div class="jobs__text text-white">
       For more info about our culture and values visit our profile on <a href="#">Cocuma</a>
     </div>
   </div>
@@ -407,6 +410,37 @@
     </div>
   </div>
 </footer>
+
+<div class="modal fade"
+     id="letsTalkModal"
+     tabindex="-1"
+     role="dialog"
+     aria-labelledby="letsTalkModal"
+     aria-hidden="true">
+  <div class="modal-dialog modal-sm modal-dialog-centered"
+       role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <strong>Hallo!</strong><br>
+        <br>
+        <strong>Are you interested in our products?<br>
+          Can we help you to Move on?</strong><br>
+        <br>
+        Please contact our product team at:<br>
+        <br>
+        <a href="mailto:product@greenlight.com"><strong>product@greenlight.com</strong></a>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 </body>

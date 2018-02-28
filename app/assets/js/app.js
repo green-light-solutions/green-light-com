@@ -4,7 +4,7 @@ import $ from 'jquery';
 import './svg-inject';
 import './progress-bar';
 import './smooth-scroll';
-// import './people-slider';
+import './navbar-bg';
 
 import '../styles/screen.scss';
 
@@ -21,5 +21,4 @@ $(function onReady() { // eslint-disable-line prefer-arrow-callback
         scrollLeft: '+=300',
       }, 500);
     });
-
 });

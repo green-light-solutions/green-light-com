@@ -722,16 +722,16 @@ $badge-pill-border-radius: 10rem;
 // Modals
 
 // Padding applied to the modal body
-$modal-inner-padding: 1rem;
+$modal-inner-padding: 2rem;
 
 $modal-dialog-margin: .5rem;
 $modal-dialog-margin-y-sm-up: 1.75rem;
 
 $modal-title-line-height: $line-height-base;
 
-$modal-content-bg: $white;
+$modal-content-bg: $gray-200;
 $modal-content-border-color: rgba($black, .2);
-$modal-content-border-width: $border-width;
+$modal-content-border-width: 0;
 $modal-content-box-shadow-xs: 0 .25rem .5rem rgba($black, .5);
 $modal-content-box-shadow-sm-up: 0 .5rem 1rem rgba($black, .5);
 
@@ -739,13 +739,13 @@ $modal-backdrop-bg: $black;
 $modal-backdrop-opacity: .5;
 $modal-header-border-color: $gray-200;
 $modal-footer-border-color: $modal-header-border-color;
-$modal-header-border-width: $modal-content-border-width;
-$modal-footer-border-width: $modal-header-border-width;
+$modal-header-border-width: 0;
+$modal-footer-border-width: 0;
 $modal-header-padding: 1rem;
 
 $modal-lg: 800px;
 $modal-md: 500px;
-$modal-sm: 300px;
+$modal-sm: 400px;
 
 $modal-transition: transform .3s ease-out;
 
@@ -766,10 +766,9 @@ $alert-color-level: 6;
 
 // Progress bars
 
-$progress-height: .4375rem;
+$progress-height: .375rem;
 $progress-font-size: ($font-size-base * .75);
 $progress-bg: rgba(51, 204, 51, 0.3);
-;
 $progress-border-radius: 0;
 $progress-box-shadow: none;
 $progress-bar-color: $white;

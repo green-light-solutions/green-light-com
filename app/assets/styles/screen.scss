@@ -32,11 +32,15 @@
 @import "utils";
 @import "navbar";
 @import "buttons";
+@import "header";
+@import "modal";
 
 @import "hero";
-@import "products";
+@import "quadro";
+@import "product";
 @import "people";
 @import "footer";
+@import "jobs";
 
 body {
 	position: relative;
