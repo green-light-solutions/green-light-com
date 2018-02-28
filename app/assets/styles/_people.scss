@@ -1,6 +1,7 @@
 .scrollbox {
 	position: relative;
 	width: 100vw;
+	margin-top: 31px;
 
 	.scrollbox-inner {
 		display: flex;
@@ -64,7 +65,7 @@
 	}
 
 	.person__quote {
-		font-size: 1.125rem;
+		font-size: 1.25rem;
 		line-height: 1.5;
 	}
 
@@ -96,12 +97,13 @@
 	}
 
 	.person__name {
-		font-size: 1rem;
+		font-size: 1.0625rem;
 		font-weight: $font-weight-bold;
 	}
 
 	.person__job {
 		min-height: 2.625rem;
+		line-height: 1.7;
 	}
 
 	.person__social {

@@ -21,7 +21,7 @@
 			margin-top: 1rem;
 		}
 		.link {
-			font-size: 1.125rem;
+			font-size: 1.25rem;
 			line-height: 1.55;
 			text-decoration: underline;
 		}
@@ -81,14 +81,10 @@
 			height: 28.125rem;
 			border-radius: 100%;
 
-			.gls {
-				margin-bottom: 3.125rem;
-			}
-
 			.title {
 				font-size: 1.875rem;
 				line-height: 1.33;
-				margin-bottom: 2.75rem;
+				margin-bottom: 2.5rem;
 			}
 
 			.perex {
@@ -100,7 +96,9 @@
 		}
 
 		.quadro__item {
-			height: 27.5rem;
+			height: calc(50vh - 1.875rem);
+			min-height: 16.25rem;
+			max-height: 27.5rem;
 		}
 	}
 }

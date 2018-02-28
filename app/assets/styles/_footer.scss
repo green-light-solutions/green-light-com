@@ -23,9 +23,11 @@
 		.menu__title {
 			color: $white;
 			padding: .5rem 0;
+			font-size: .875rem;
 		}
 
 		.nav-link {
+			font-size: .875rem;
 			color: $gray-500;
 			padding-right: 0;
 			padding-left: 0;
@@ -38,6 +40,8 @@
 	}
 
 	.address {
+		font-size: .875rem;
+
 		span {
 			display: block;
 			padding: .5rem 0;

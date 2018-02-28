@@ -1,9 +1,13 @@
 .jobs {
-	padding: 2rem 0 9.375rem;
+	padding: 3.125rem 0 9.375rem;
 	background: $black url(../images/jobs-bg.jpg) no-repeat center center / cover;
 
+	.header .title {
+		padding-bottom: 0;
+	}
+
 	.jobs__image {
-		height: 46.25rem;
+		height: 35rem;
 	}
 
 	.jobs__text {
