@@ -46,6 +46,11 @@ npm run serve
 
 This brings up demo website on [http://localhost:8080](http://localhost:8080).
 
+### Docker
+
+You can use Docker for development environment too. Just run `docker-compose up` command
+and Docker will install dependencies for you and will start development server with automatic builds.
+
 
 ### Overriding bootstrap defaults
 
