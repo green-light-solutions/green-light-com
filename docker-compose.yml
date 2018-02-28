@@ -1,0 +1,11 @@
+version: "3.5"
+
+services:
+  web:
+    image: gls-web-2018
+    command: bash -c "bin/install-dependencies.sh && npm run serve"
+    build: .
+    ports:
+      - 8080:8080
+    volumes:
+      - ".:/var/www"
