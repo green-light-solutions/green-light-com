@@ -26,13 +26,13 @@ build-dev:
   only:
     - dev
 
-#deploy-dev:
-#  stage: deploy
-#  script:
-#    - docker pull "$DEV_TAG"
-#    - docker service update --with-registry-auth --image $(docker inspect --type image --format '{{index .RepoDigests 0}}' $DEV_TAG) green-light-dev_web
-#  tags:
-#    - docker
-#    - vshosting-cluster
-#  only:
-#    - dev
+deploy-dev:
+  stage: deploy
+  script:
+    - docker pull "$DEV_TAG"
+    - docker service update --with-registry-auth --image $(docker inspect --type image --format '{{index .RepoDigests 0}}' $DEV_TAG) green-light-dev_web
+  tags:
+    - docker
+    - vshosting-cluster
+  only:
+    - dev
