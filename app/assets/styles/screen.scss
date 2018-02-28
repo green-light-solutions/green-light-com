@@ -41,12 +41,4 @@
 @import "people";
 @import "footer";
 @import "jobs";
-
-body {
-	position: relative;
-}
-
-*:focus,
-button:focus {
-	outline: none;
-}
+@import "contact";

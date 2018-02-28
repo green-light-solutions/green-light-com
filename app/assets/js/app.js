@@ -13,12 +13,14 @@ import '../styles/screen.scss';
  * on production build it returns an error.
  */
 $(function onReady() { // eslint-disable-line prefer-arrow-callback
-  $('.people header')
-    .click((e) => {
-      e.preventDefault();
-      const $scrollbox = $('.scrollbox');
-      $scrollbox.animate({
-        scrollLeft: '+=300',
-      }, 500);
-    });
+  if (document.body.classList.contains('homepage')) {
+    $('.people header')
+      .click((e) => {
+        e.preventDefault();
+        const $scrollbox = $('.scrollbox');
+        $scrollbox.animate({
+          scrollLeft: '+=300',
+        }, 500);
+      });
+  }
 });

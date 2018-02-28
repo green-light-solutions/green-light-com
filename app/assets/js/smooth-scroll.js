@@ -1,6 +1,6 @@
 import $ from 'jquery';
 
-$('a[href*="#"]')
+$('a[href^="#"]')
 // Remove links that don't actually link to anything
   .not('[href="#"]')
   .not('[href="#0"]')
@@ -15,7 +15,7 @@ $('a[href*="#"]')
       if ($target.length) {
         $('html,body')
           .animate({
-            scrollTop: $target.offset().top - 60,
+            scrollTop: $target.offset().top,
           }, 1000, () => {
             target = target.replace(/^#/, '');
             let fx;
