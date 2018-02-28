@@ -215,10 +215,11 @@
           with some of the world's leading brands. </p>
       </div>
       <div class="button col-12 text-center">
-        <a href="#"
-           class="btn btn-outline-light">
+        <button class="btn btn-outline-light"
+                data-toggle="modal"
+                data-target="#letsTalkModal">
           Let’s talk&nbsp;<i class="fas fa-arrow-right"></i>
-        </a>
+        </button>
       </div>
     </div>
   </div>
@@ -409,6 +410,37 @@
     </div>
   </div>
 </footer>
+
+<div class="modal fade"
+     id="letsTalkModal"
+     tabindex="-1"
+     role="dialog"
+     aria-labelledby="letsTalkModal"
+     aria-hidden="true">
+  <div class="modal-dialog modal-sm modal-dialog-centered"
+       role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <strong>Hallo!</strong><br>
+        <br>
+        <strong>Are you interested in our products?<br>
+          Can we help you to Move on?</strong><br>
+        <br>
+        Please contact our product team at:<br>
+        <br>
+        <a href="mailto:product@greenlight.com"><strong>product@greenlight.com</strong></a>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 </body>
