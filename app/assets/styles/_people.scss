@@ -1,12 +1,50 @@
 .scrollbox {
-	display: flex;
-	flex-wrap: nowrap;
-	overflow-x: auto;
-	-webkit-overflow-scrolling: touch;
+	position: relative;
+	width: 100vw;
 
-	.person {
-		flex: 0 0 95%;
-		max-width: 26.25rem;
+	.scrollbox-inner {
+		display: flex;
+		flex-wrap: nowrap;
+		overflow-x: auto;
+		-webkit-overflow-scrolling: touch;
+
+		.person {
+			flex: 0 0 95%;
+			max-width: 26.25rem;
+		}
+	}
+
+	.scrollbox-arrow {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: absolute;
+		top: 50%;
+		z-index: 4;
+		margin-top: -3.125rem;
+		width: 6.25rem;
+		height: 6.25rem;
+		border-radius: 100%;
+		background: transparentize($black, .7);
+		font-size: 1.125rem;
+		color: $white;
+
+		&:active {
+			border: none;
+		}
+	}
+
+	.scrollbox-next {
+		right: -4.25rem;
+		transition: right 300ms ease-out;
+
+		&:hover {
+			right: -3.125rem;
+		}
+
+		.far {
+			margin-right: 1.25rem;
+		}
 	}
 }
 

@@ -5,6 +5,7 @@ import './svg-inject';
 import './progress-bar';
 import './smooth-scroll';
 import './navbar-bg';
+import './people-slider';
 
 import '../styles/screen.scss';
 
@@ -13,14 +14,5 @@ import '../styles/screen.scss';
  * on production build it returns an error.
  */
 $(function onReady() { // eslint-disable-line prefer-arrow-callback
-  if (document.body.classList.contains('homepage')) {
-    $('.people header')
-      .click((e) => {
-        e.preventDefault();
-        const $scrollbox = $('.scrollbox');
-        $scrollbox.animate({
-          scrollLeft: '+=300',
-        }, 500);
-      });
-  }
+
 });
