@@ -1,6 +1,7 @@
 import 'bootstrap';
 import $ from 'jquery';
 
+import './fontawesome-all.min';
 import './svg-inject';
 import './progress-bar';
 import './smooth-scroll';
