@@ -5,7 +5,7 @@
 	-webkit-overflow-scrolling: touch;
 
 	.person {
-		flex: 0 0 90%;
+		flex: 0 0 95%;
 		max-width: 26.25rem;
 	}
 }
@@ -16,6 +16,11 @@
 	padding: 2.875rem 2.625rem 2.625rem;
 	background-color: $gray-200;
 
+	@include media-breakpoint-down(md) {
+		padding-right: 1.625rem;
+		padding-left: 1.625rem;
+	}
+
 	&:nth-child(even) {
 		background-color: $white;
 	}
@@ -25,16 +30,40 @@
 		line-height: 1.5;
 	}
 
+	.person__image {
+		position: absolute;
+		bottom: 2.625rem;
+		right: 2.625rem;
+
+		@include media-breakpoint-down(md) {
+			right: 1.625rem;
+		}
+
+		img {
+			width: 7.5rem;
+			height: 7.5rem;
+			border-radius: 100%;
+		}
+	}
+
 	.person__details {
 		position: absolute;
 		bottom: 2.625rem;
 		left: 2.625rem;
 		font-size: .875rem;
+
+		@include media-breakpoint-down(md) {
+			left: 1.625rem;
+		}
 	}
 
 	.person__name {
 		font-size: 1rem;
 		font-weight: $font-weight-bold;
+	}
+
+	.person__job {
+		min-height: 2.625rem;
 	}
 
 	.person__social {
