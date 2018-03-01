@@ -36,3 +36,27 @@ deploy-dev:
     - vshosting-cluster
   only:
     - dev
+
+
+ build-prod:
+  stage: build
+  script:
+    - docker build --pull -t "$PROD_TAG" .
+    - docker push "$PROD_TAG"
+  tags:
+    - docker
+    - vshosting-cluster
+  only:
+    - dev
+
+deploy-prod:
+  stage: deploy
+  script:
+    - docker pull "$PROD_TAG"
+    - docker service update --with-registry-auth --image $(docker inspect --type image --format '{{index .RepoDigests 0}}' $PROD_TAG) green-light-prod_web
+  tags:
+    - docker
+    - vshosting-cluster
+  only:
+    - dev
+   
