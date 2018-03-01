@@ -43,7 +43,7 @@ build-prod:
     - docker
     - vshosting-cluster
   only:
-    - dev
+    - master
 
 deploy-prod:
   stage: deploy
@@ -54,4 +54,4 @@ deploy-prod:
     - docker
     - vshosting-cluster
   only:
-    - dev
+    - master
