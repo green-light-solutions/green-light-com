@@ -37,8 +37,7 @@ deploy-dev:
   only:
     - dev
 
-
- build-prod:
+build-prod:
   stage: build
   script:
     - docker build --pull -t "$PROD_TAG" .
