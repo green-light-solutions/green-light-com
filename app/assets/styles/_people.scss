@@ -127,7 +127,7 @@
 	}
 }
 
-@include media-breakpoint-down(md) {
+@include media-breakpoint-down(sm) {
 	.person {
 		padding-right: 1.625rem;
 		padding-left: 1.625rem;

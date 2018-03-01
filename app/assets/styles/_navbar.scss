@@ -1,4 +1,5 @@
 .navbar {
+	background-color: transparentize($gray-900, .8) !important;
 	transition: background-color 300ms ease-out;
 
 	&.bg-dark {

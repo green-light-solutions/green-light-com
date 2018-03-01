@@ -26,7 +26,12 @@
 		text-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
 		font-weight: $font-weight-normal;
 
-		@include media-breakpoint-up(sm) {
+		@include media-breakpoint-up(md) {
+			font-size: 1.375rem;
+			line-height: 1.5;
+		}
+
+		@include media-breakpoint-up(lg) {
 			font-size: 2rem;
 			line-height: 1.56;
 			font-weight: $font-weight-light;
@@ -40,7 +45,7 @@
 				text-decoration: none;
 			}
 
-			@include media-breakpoint-up(sm) {
+			@include media-breakpoint-up(lg) {
 				border-bottom-width: 2px;
 			}
 		}

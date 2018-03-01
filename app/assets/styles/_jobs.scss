@@ -4,6 +4,10 @@
 
 	@include media-breakpoint-up(md) {
 		background-image: url(../images/jobs-bg.jpg);
+		padding-bottom: 4.375rem;
+	}
+
+	@include media-breakpoint-up(lg) {
 		padding-bottom: 9.375rem;
 	}
 
