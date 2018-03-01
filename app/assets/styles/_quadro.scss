@@ -6,7 +6,7 @@
 		padding: 2.25rem 1rem 2rem;
 
 		.gls {
-			margin-bottom: 2.125rem;
+			margin-bottom: 1.5rem;
 
 			svg {
 				width: 4.375rem;
@@ -15,11 +15,17 @@
 		}
 
 		.title {
-			margin-bottom: 2rem;
+			margin-bottom: 1rem;
+			font-size: 1.5rem;
 		}
 		.button {
 			margin-top: 1rem;
 		}
+
+		.arrow {
+			font-size: 1.5rem;
+		}
+
 		.link {
 			font-size: 1.25rem;
 			line-height: 1.55;
@@ -80,6 +86,10 @@
 			width: 28.125rem;
 			height: 28.125rem;
 			border-radius: 100%;
+
+			.gls {
+				margin-bottom: 2.125rem;
+			}
 
 			.title {
 				font-size: 1.875rem;

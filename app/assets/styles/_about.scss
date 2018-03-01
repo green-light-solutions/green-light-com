@@ -1,0 +1,12 @@
+@include media-breakpoint-down(lg) {
+	.about {
+		.quadro__header {
+			padding-top: 3.5rem;
+
+			.title {
+				font-size: 1.5rem;
+				line-height: 1.2;
+			}
+		}
+	}
+}

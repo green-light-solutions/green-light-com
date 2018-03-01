@@ -1,10 +1,40 @@
 .navbar {
 	transition: background-color 300ms ease-out;
+
+	&.bg-dark {
+		background-color: transparentize($gray-900, .1) !important;
+	}
 }
 
 .navbar-nav {
 	.nav-link {
 		font-size: 1.125rem;
 		//font-weight: 300;
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.navbar-collapse {
+		margin-right: -1rem;
+		margin-left: -1rem !important;
+		margin-bottom: -.5rem;
+		background: $gray-800 content-box;
+		border-top: .5rem solid transparent;
+	}
+
+	.navbar-nav {
+
+		.nav-item {
+			.nav-link {
+				padding: 1rem;
+				border-bottom: 1px solid $gray-700;
+			}
+
+			&:last-child {
+				.nav-link {
+					border-bottom: 0;
+				}
+			}
+		}
 	}
 }

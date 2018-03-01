@@ -24,10 +24,12 @@
 		font-size: 1.125rem;
 		line-height: 1.75;
 		text-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+		font-weight: $font-weight-normal;
 
 		@include media-breakpoint-up(sm) {
 			font-size: 2rem;
 			line-height: 1.56;
+			font-weight: $font-weight-light;
 		}
 
 		a {

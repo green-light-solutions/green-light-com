@@ -1,13 +1,17 @@
 import $ from 'jquery';
 import 'waypoints/lib/noframework.waypoints';
 
+$('#mainNav .nav-link')
+  .click(() => {
+    $('#navigation')
+      .collapse('hide');
+  });
+
 if (document.body.classList.contains('homepage')) {
   $(window)
     .scroll(() => {
       if ($(window)
-          .scrollTop() > $('#products')
-          .parent()
-          .position().top - 70) {
+          .scrollTop() > 50) {
         if ($('#mainNav')
             .hasClass('bg-dark')) {
           return;

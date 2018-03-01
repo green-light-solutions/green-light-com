@@ -1,19 +1,48 @@
 .jobs {
-	padding: 3.125rem 0 9.375rem;
-	background: $black url(../images/jobs-bg.jpg) no-repeat center center / cover;
+	padding: 3.125rem 0 4rem;
+	background: $black no-repeat center center / cover;
+
+	@include media-breakpoint-up(md) {
+		background-image: url(../images/jobs-bg.jpg);
+		padding-bottom: 9.375rem;
+	}
+
+	@include media-breakpoint-down(lg) {
+		padding-top: 0;
+	}
 
 	.header .title {
 		padding-bottom: 0;
+
+		@include media-breakpoint-down(lg) {
+			padding-top: 4.5rem;
+		}
+	}
+
+	.jobs__thumb {
+		img {
+			width: 100%;
+		}
 	}
 
 	.jobs__image {
-		height: 35rem;
+		margin-bottom: 4rem;
+
+		@include media-breakpoint-up(md) {
+			height: 35rem;
+			margin-bottom: 0;
+		}
 	}
 
 	.jobs__text {
-		font-size: 1.25rem;
-		line-height: 1.4;
+		font-size: 1rem;
+		line-height: 1.5;
 		text-shadow: 0 1px 2px 0 transparentize($black, .5);
+
+		@include media-breakpoint-up(lg) {
+			font-size: 1.25rem;
+			line-height: 1.4;
+		}
 
 		a {
 			text-decoration: underline;
