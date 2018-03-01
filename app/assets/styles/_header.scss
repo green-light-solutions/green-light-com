@@ -17,13 +17,23 @@
 
 	@include media-breakpoint-up(lg) {
 		.title {
-			font-size: 2.5rem;
+			font-size: 2.125rem;
 			line-height: 1.4;
 			padding-bottom: 2.5rem;
 
 			&:only-child {
 				padding: 6.25rem 0 4.25rem;
 			}
+		}
+
+		.perex {
+			font-size: 1.25rem;
+		}
+	}
+
+	@include media-breakpoint-up(xl) {
+		.title {
+			font-size: 2.5rem;
 		}
 
 		.perex {

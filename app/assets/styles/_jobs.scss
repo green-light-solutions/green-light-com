@@ -8,6 +8,10 @@
 	}
 
 	@include media-breakpoint-up(lg) {
+		padding-bottom: 5.375rem;
+	}
+
+	@include media-breakpoint-up(xl) {
 		padding-bottom: 9.375rem;
 	}
 

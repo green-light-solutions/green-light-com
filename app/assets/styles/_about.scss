@@ -6,6 +6,20 @@
 			.title {
 				font-size: 1.5rem;
 				line-height: 1.2;
+				margin-bottom: 1.75rem;
+			}
+		}
+	}
+}
+
+@include media-breakpoint-down(md) {
+	.about {
+		.quadro__header {
+			padding-top: 3.5rem;
+
+			.title {
+				font-size: 1.5rem;
+				line-height: 1.2;
 			}
 		}
 	}

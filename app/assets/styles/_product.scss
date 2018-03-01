@@ -136,13 +136,11 @@
 			position: absolute;
 			top: 50%;
 			left: 3.4375rem;
-			font-size: 1.375rem;
 			line-height: 1.45;
 			margin-bottom: 4.125rem;
 		}
 
 		.product__link {
-			font-size: 1rem;
 			left: 3.4375rem;
 			bottom: 3.5rem;
 		}
@@ -156,6 +154,44 @@
 			.product__link {
 				right: 3.4375rem;
 			}
+		}
+	}
+
+	.brands {
+		.header {
+			margin-top: 0;
+
+			.title {
+				padding-top: 6.25rem;
+				padding-bottom: 4.25rem;
+			}
+		}
+
+		.logos {
+			margin-bottom: 5.625rem;
+
+			img {
+				width: 60%;
+			}
+		}
+
+		.text {
+			margin-bottom: 4.25rem;
+		}
+		.button {
+			margin-bottom: 9.375rem;
+		}
+	}
+}
+
+@include media-breakpoint-up(xl) {
+	.product {
+
+		.product__text {
+			font-size: 1.375rem;
+		}
+		.product__link {
+			font-size: 1rem;
 		}
 	}
 
@@ -185,4 +221,3 @@
 		}
 	}
 }
-
