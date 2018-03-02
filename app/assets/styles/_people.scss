@@ -56,13 +56,17 @@
 		}
 	}
 
-	.scrollbox-next {
-		right: -4.25rem;
-		transition: right 300ms ease-out;
+	.scrollbox-prev {
+		left: -3.125rem;
+		display: none;
 
-		&:hover {
-			right: -3.125rem;
+		.far {
+			margin-left: 1.25rem;
 		}
+	}
+
+	.scrollbox-next {
+		right: -3.125rem;
 
 		.far {
 			margin-right: 1.25rem;
