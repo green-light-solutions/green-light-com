@@ -17,6 +17,7 @@ module.exports = (env) => {
   const publicPath = '/';
   const imagesLocation = 'assets/images/';
   const videosLocation = 'assets/video';
+  const staticLocation = 'static/';
 
   const extractSass = new ExtractTextPlugin({
     filename: '[name].[contenthash].css',
@@ -103,6 +104,11 @@ module.exports = (env) => {
       new CopyWebpackPlugin([{
         from: videosLocation,
         to: videosLocation,
+      },
+      ]),
+      new CopyWebpackPlugin([{
+        from: staticLocation,
+        to: staticLocation,
       },
       ]),
 
