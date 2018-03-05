@@ -1,9 +1,5 @@
 .contact {
-	padding: 6.25rem 0 9.375rem;
-
-	@include media-breakpoint-down(md) {
-		padding-bottom: 1.5rem;
-	}
+	padding: 3.25rem 0 0;
 
 	.header {
 		.title {
@@ -76,5 +72,15 @@
 
 	.contact__link {
 
+	}
+
+	.contact__img {
+		text-align: center;
+		padding: 3.125rem 0;
+
+		img {
+			width: 100%;
+			max-width: 26.25rem;
+		}
 	}
 }

@@ -7,4 +7,12 @@
 		padding-left: 1.5rem;
 		font-size: 1rem;
 	}
+
+	&.btn-outline-light {
+		background: transparentize($black, .5);
+
+		&:hover {
+			background: $light;
+		}
+	}
 }

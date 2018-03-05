@@ -41,19 +41,4 @@
 			margin-bottom: 0;
 		}
 	}
-
-	.jobs__text {
-		font-size: 1rem;
-		line-height: 1.5;
-		text-shadow: 0 1px 2px 0 transparentize($black, .5);
-
-		@include media-breakpoint-up(lg) {
-			font-size: 1.25rem;
-			line-height: 1.4;
-		}
-
-		a {
-			text-decoration: underline;
-		}
-	}
 }
