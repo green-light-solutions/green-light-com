@@ -84,4 +84,25 @@ if (document.body.classList.contains('homepage')) {
       }
     },
   });
+
+  const contactsWaypoint = new Waypoint({
+    element: document.getElementById('contact'),
+    handler: (dir) => {
+      if (dir === 'down') {
+        $('#mainNav a[href="#jobs"]')
+          .parent()
+          .removeClass('active');
+        $('#mainNav a[href="#contact"]')
+          .parent()
+          .addClass('active');
+      } else {
+        $('#mainNav a[href="#jobs"]')
+          .parent()
+          .addClass('active');
+        $('#mainNav a[href="#contact"]')
+          .parent()
+          .removeClass('active');
+      }
+    },
+  });
 }
