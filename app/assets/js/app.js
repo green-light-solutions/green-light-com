@@ -4,7 +4,7 @@ import $ from 'jquery';
 import './svg-inject';
 import './progress-bar';
 import './smooth-scroll';
-import './navbar-bg';
+import './navbar';
 import './people-slider';
 
 import '../styles/screen.scss';

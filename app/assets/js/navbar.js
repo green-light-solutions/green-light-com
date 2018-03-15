@@ -35,10 +35,13 @@ if (document.body.classList.contains('homepage')) {
         $('#mainNav a[href="#products"]')
           .parent()
           .addClass('active');
+
+        history.pushState(1,1,'#product')
       } else {
         $('#mainNav a[href="#products"]')
           .parent()
           .removeClass('active');
+        history.pushState(1,1,'#')
       }
     },
   });
@@ -53,6 +56,7 @@ if (document.body.classList.contains('homepage')) {
         $('#mainNav a[href="#us"]')
           .parent()
           .addClass('active');
+        history.pushState(1,1,'#us')
       } else {
         $('#mainNav a[href="#products"]')
           .parent()
@@ -60,6 +64,7 @@ if (document.body.classList.contains('homepage')) {
         $('#mainNav a[href="#us"]')
           .parent()
           .removeClass('active');
+        history.pushState(1,1,'#product')
       }
     },
   });
@@ -74,6 +79,7 @@ if (document.body.classList.contains('homepage')) {
         $('#mainNav a[href="#jobs"]')
           .parent()
           .addClass('active');
+        history.pushState(1,1,'#jobs')
       } else {
         $('#mainNav a[href="#us"]')
           .parent()
@@ -81,6 +87,7 @@ if (document.body.classList.contains('homepage')) {
         $('#mainNav a[href="#jobs"]')
           .parent()
           .removeClass('active');
+        history.pushState(1,1,'#us')
       }
     },
   });
@@ -95,6 +102,7 @@ if (document.body.classList.contains('homepage')) {
         $('#mainNav a[href="#contact"]')
           .parent()
           .addClass('active');
+        history.pushState(1,1,'#contact')
       } else {
         $('#mainNav a[href="#jobs"]')
           .parent()
@@ -102,6 +110,7 @@ if (document.body.classList.contains('homepage')) {
         $('#mainNav a[href="#contact"]')
           .parent()
           .removeClass('active');
+        history.pushState(1,1,'#jobs')
       }
     },
   });
