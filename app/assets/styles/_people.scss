@@ -40,13 +40,11 @@
 		top: 50%;
 		z-index: 4;
 		margin-top: -3.125rem;
-		width: 6.25rem;
+		width: 4.875rem;
 		height: 6.25rem;
-		border-radius: 100%;
 		border: 0;
-		background: transparentize($black, .7);
-		font-size: 1.125rem;
-		color: $white;
+		background: transparent;
+		padding: 0;
 
 		&:active {
 			border: none;
@@ -55,23 +53,20 @@
 		@include media-breakpoint-down(lg) {
 			display: none;
 		}
+
+		svg	{
+			width: 1.625rem;
+			height: 3.5rem;
+		}
 	}
 
 	.scrollbox-prev {
-		left: -3.125rem;
+		left: 0;
 		display: none;
-
-		.far {
-			margin-left: 1.25rem;
-		}
 	}
 
 	.scrollbox-next {
-		right: -3.125rem;
-
-		.far {
-			margin-right: 1.25rem;
-		}
+		right: 0;
 	}
 }
 
@@ -96,12 +91,32 @@
 	position: relative;
 	height: 26.25rem;
 	padding: 2.875rem 2.625rem 2.625rem;
-	background-color: $gray-200;
+	background-color: $white;
 
+	&::before,
+	&::after {
+		content: '';
+		display: block;
+		position: absolute;
+		top: 2.125rem;
+		width: 1px;
+		height: (26.25 - 4.25) * 1rem;
+		background: #e1e1e1;
+	}
 
+	&::before {
+		left: 0;
+	}
 
-	&:nth-child(even) {
-		background-color: $white;
+	&::after {
+		right: 0;
+	}
+
+	&:first-child::before {
+		display: none;
+	}
+	&:last-child::after {
+		display: none;
 	}
 
 	.person__quote {
