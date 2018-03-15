@@ -144,3 +144,47 @@
 		}
 	}
 }
+
+.quadro.about {
+	.quadro__item {
+		transition: background-image 300ms ease-out;
+
+		@include media-breakpoint-up(md) {
+			min-height: 26.25rem;
+		}
+
+		&.first {
+			background-image: url(../images/tiles-1a.jpg);
+			background-position: center top;
+
+			&:hover {
+				background-image: url(../images/tiles-1b.jpg);
+			}
+		}
+
+		&.second {
+			background-image: url(../images/tiles-2a.jpg);
+
+			&:hover {
+				background-image: url(../images/tiles-2b.jpg);
+			}
+		}
+
+		&.third {
+			background-image: url(../images/tiles-3a.jpg);
+			background-position: left center;
+
+			&:hover {
+				background-image: url(../images/tiles-3b.jpg);
+			}
+		}
+
+		&.fourth {
+			background-image: url(../images/tiles-4a.jpg);
+
+			&:hover {
+				background-image: url(../images/tiles-4b.jpg);
+			}
+		}
+	}
+}
