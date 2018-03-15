@@ -105,6 +105,13 @@
 	}
 }
 
+@media screen and (min-width: 576px) {
+	.brands .logos img {
+		width: 100%;
+		max-height: 3.5rem;
+	}
+}
+
 @include media-breakpoint-up(md) {
 	.product {
 		padding: 2.8125rem 1.5rem 3.75rem;
@@ -176,11 +183,8 @@
 		}
 
 		.logos {
-			margin-bottom: 5.625rem;
-
-			img {
-				width: 60%;
-			}
+			padding-top: 4.6875rem;
+			margin-bottom: 9.0625rem;
 		}
 
 		.text {
@@ -206,26 +210,10 @@
 	.brands {
 		.header {
 			margin-top: 3.125rem;
-
-			.title {
-				padding-top: 6.25rem;
-				padding-bottom: 4.25rem;
-			}
-		}
-
-		.logos {
-			margin-bottom: 5.625rem;
-
-			img {
-				width: 100%;
-			}
 		}
 
 		.text {
 			margin-bottom: 6.25rem;
-		}
-		.button {
-			margin-bottom: 9.375rem;
 		}
 	}
 }
