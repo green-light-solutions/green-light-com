@@ -25,6 +25,11 @@
 		@include media-breakpoint-down(lg) {
 			padding-top: 4.5rem;
 		}
+
+		@include media-breakpoint-up(lg) {
+			padding-top: 3.125rem;
+			padding-bottom: 6.25rem;
+		}
 	}
 
 	.jobs__thumb {
