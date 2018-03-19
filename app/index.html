@@ -609,13 +609,12 @@
   </div>
 </footer>
 
-<script type="text/javascript"
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAnRqnU77lV1Rt9wM6hxCGGho_-j4a2nG4"></script>
+<script async
+        defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_O7MvHet0ih35vR_qULruZ6SeianZp2E&callback=initMap"
+        type="text/javascript"></script>
 <script type="text/javascript">
-  // When the window has finished loading create our google map below
-  google.maps.event.addDomListener(window, 'load', init);
-
-  function init() {
+  function initMap() {
     // Basic options for a simple Google Map
     // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
     var mapOptions = {
