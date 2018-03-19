@@ -93,8 +93,7 @@
 	padding: 2.875rem 2.625rem 2.625rem;
 	background-color: $white;
 
-	&::before,
-	&::after {
+	&::before {
 		content: '';
 		display: block;
 		position: absolute;
@@ -108,14 +107,7 @@
 		left: 0;
 	}
 
-	&::after {
-		right: 0;
-	}
-
 	&:first-child::before {
-		display: none;
-	}
-	&:last-child::after {
 		display: none;
 	}
 
