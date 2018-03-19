@@ -1,86 +1,58 @@
 .contact {
-	padding: 3.25rem 0 0;
+	color: $gray-600;
 
-	.header {
-		.title {
-			margin-bottom: 0;
-			padding-bottom: 2.375rem;
+	.contact-details {
+		padding: 6.25rem 1rem 5rem;
+
+		@include media-breakpoint-up(md) {
+			padding-right: 3.125rem;
 		}
 
-		.perex {
-			margin-bottom: 0;
-		}
-	}
-
-	.contact__box {
-		border: 1px solid $gray-600;
-		padding: 3.125rem 0 0;
-		margin-top: 3.125rem;
-
-		@include media-breakpoint-down(md) {
-			border: 0;
-			padding-top: 0;
+		@include media-breakpoint-up(lg) {
+			padding-right: 6.25rem;
 		}
 
-		p {
-			margin-bottom: 2rem;
-
-			@include media-breakpoint-down(md) {
-				margin-bottom: 1.5rem;
-			}
-
-			&:last-child {
-				margin-bottom: 0;
-			}
+		@include media-breakpoint-up(xl) {
+			padding-right: 12.125rem;
 		}
-
-		.col-12 {
-			padding: 0 3.125rem 3.125rem;
-
-			@include media-breakpoint-down(md) {
-				padding-right: 1.5rem;
-				padding-left: 1.5rem;
-			}
-		}
-	}
-
-	.contact__title {
-		color: $white;
-		margin-bottom: 2rem;
-		font-size: 1.375rem;
-
-		@include media-breakpoint-down(md) {
-			font-size: 1.125rem;
-			margin-bottom: 1.5rem;
-		}
-	}
-
-	.contact__text {
-		font-size: 1.0625rem;
-		line-height: 1.4;
-		color: $gray-600;
-		text-shadow: 0 1px 2px 0 transparentize($black, .5);
-
-		@include media-breakpoint-down(md) {
-			font-size: .875rem;
-		}
-
-		a {
-			color: $white;
-		}
-	}
-
-	.contact__link {
 
 	}
 
-	.contact__img {
-		text-align: center;
-		padding: 1.25rem 0;
+	.header .title {
+		padding-top: 0;
+		padding-bottom: 3.125rem;
+		margin-bottom: 0;
+	}
 
-		img {
-			width: 100%;
-			max-width: 18.75rem;
+	.contacts {
+		font-size: 1.25rem;
+		font-weight: $font-weight-bold;
+
+		@include media-breakpoint-up(lg) {
+			font-size: 1.625rem;
+		}
+
+		a[href^="tel:"] {
+			color: $gray-600;
+		}
+	}
+
+	.address {
+		@include media-breakpoint-up(lg) {
+			font-size: 1.25rem;
+		}
+	}
+
+	.nav {
+		padding: 3.125rem 0;
+		font-size: 1.5rem;
+	}
+
+	#map {
+		height: 25rem;
+
+		@include media-breakpoint-up(md) {
+			height: auto;
 		}
 	}
 }
