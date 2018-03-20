@@ -5,6 +5,22 @@
 
 	&.bg-dark {
 		background-color: transparentize($gray-900, .1) !important;
+
+		.navbar-brand svg {
+			.text {
+				opacity: 0;
+			}
+		}
+	}
+
+	.navbar-brand {
+		svg {
+			vertical-align: middle;
+
+			.text {
+				transition: opacity 300ms ease-out;
+			}
+		}
 	}
 }
 
