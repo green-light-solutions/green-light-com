@@ -6,7 +6,7 @@ if (document.body.classList.contains('homepage')) {
       e.preventDefault();
       const $scrollbox = $('.scrollbox .scrollbox-inner');
       $scrollbox.animate({
-        scrollLeft: '+=300',
+        scrollLeft: '+=700',
       }, 500);
     });
   $('.scrollbox .scrollbox-prev')
@@ -14,7 +14,7 @@ if (document.body.classList.contains('homepage')) {
       e.preventDefault();
       const $scrollbox = $('.scrollbox .scrollbox-inner');
       $scrollbox.animate({
-        scrollLeft: '-=300',
+        scrollLeft: '-=700',
       }, 500);
     });
 
