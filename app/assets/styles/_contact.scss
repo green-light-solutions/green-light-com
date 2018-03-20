@@ -50,9 +50,11 @@
 
 	#map {
 		height: 25rem;
+		display: none;
 
 		@include media-breakpoint-up(md) {
 			height: auto;
+			display: block;
 		}
 	}
 }

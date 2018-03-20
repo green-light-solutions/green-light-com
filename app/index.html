@@ -592,7 +592,11 @@
         <div class="address">
           Vyskočilova 1561/4A<br>
           140 00 Prague 4<br>
-          Czech Republic
+          Czech Republic<br>
+          <a class="d-md-none font-weight-bold"
+             style="text-decoration: underline"
+             href="https://goo.gl/maps/9hkr7EkUqi12"
+             target="_blank">Show on map</a>
         </div>
       </div>
       <div class="col-12 col-md-6 bg-light"
@@ -697,6 +701,10 @@
       position: new google.maps.LatLng(50.047988, 14.457375),
       map: map,
       icon: './assets/images/svg/map-marker.svg',
+    });
+
+    google.maps.event.addListener(marker, 'click', function () {
+      window.open('https://goo.gl/maps/9hkr7EkUqi12', '_blank');
     });
   }
 </script>
