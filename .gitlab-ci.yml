@@ -10,7 +10,7 @@ stages:
 before_script:
     - IMAGE_NAME=$(date +%y%m%d)-$(echo $CI_COMMIT_SHA | cut -c 1-7)
     - docker login -u "$DOCKER_LOGIN" -p "$DOCKER_PASSWORD" docker-registry.green-light.com
-    - DEV_TAG="registry.green-light.com/green-light/green-light.com:latest-dev"
+    - DEV_TAG="docker-registry.green-light.com/green-light/green-light.com:latest-dev"
     - PROD_TAG="docker-registry.green-light.com/green-light/green-light.com:latest"
 
 build-dev:
