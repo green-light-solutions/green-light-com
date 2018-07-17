@@ -48,7 +48,7 @@ deploy-dev:
     - mkdir -p $HOME/.kube
     - echo -n $KUBE_CONFIG_DEV | base64 -d > $HOME/.kube/config
     - kubectl config use-context k8s-cluster
-    - kubectl patch deployment dev-green-light-com --namespace=prod -p "{\"spec\":{\"template\":{\"metadata\":{\"labels\":{\"date\":\"`date +'%s'`\",\"version\":\"$CI_COMMIT_SHA\"}}}}}"
+    - kubectl patch deployment dev-green-light-com --namespace=dev -p "{\"spec\":{\"template\":{\"metadata\":{\"labels\":{\"date\":\"`date +'%s'`\",\"version\":\"$CI_COMMIT_SHA\"}}}}}"
   tags:
     - vshosting-cluster
   only:
