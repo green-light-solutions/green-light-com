@@ -32,10 +32,10 @@ build-prod:
     - docker pull $PROD_TAG || true
     - docker build --cache-from "$PROD_TAG" --tag "$PROD_TAG" .
     - docker push "$PROD_TAG"
-tags:
+  tags:
     - docker
     - vshosting-cluster
-only:
+  only:
     - master
 
 deploy-dev:
@@ -53,7 +53,7 @@ deploy-dev:
     - vshosting-cluster
   only:
     - dev
-
+    
 deploy-prod:
   stage: deploy
   image: alpine:latest
