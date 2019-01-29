@@ -129,6 +129,11 @@ module.exports = (env) => {
       }),
 
       new HtmlWebpackPlugin({
+        filename: 'signupform-innovationsummit-chicago-jan2019.html',
+        template: './signupform-innovationsummit-chicago-jan2019.html',
+      }),
+
+      new HtmlWebpackPlugin({
         filename: 'contact.html',
         template: './contact.html',
       }),
