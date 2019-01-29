@@ -129,6 +129,11 @@ module.exports = (env) => {
       }),
 
       new HtmlWebpackPlugin({
+        filename: 'form/index.html',
+        template: './form/index.html',
+      }),
+
+      new HtmlWebpackPlugin({
         filename: 'contact.html',
         template: './contact.html',
       }),
