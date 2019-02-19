@@ -134,6 +134,11 @@ module.exports = (env) => {
       }),
 
       new HtmlWebpackPlugin({
+        filename: 'font-test/index.html',
+        template: './font-test/index.html',
+      }),
+
+      new HtmlWebpackPlugin({
         filename: 'contact.html',
         template: './contact.html',
       }),
