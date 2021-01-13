@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="apple-touch-icon" sizes="180x180" href="/static/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon-16x16.png">
+  <link rel="manifest" href="/static/site.webmanifest">
+  <link rel="mask-icon" href="/static/safari-pinned-tab.svg" color="#33cc33">
+  <link rel="shortcut icon" href="/static/favicon.ico">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-config" content="/static/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+
+  <meta property="fb:app_id" content="164780927512110">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Greenlight — Apps for people who have better things to do">
+  <meta property="og:url" content="https://green-light.com/">
+  <meta property="og:image" content="https://green-light.com/static/og-image.jpg">
+  <meta property="og:description" content="Some people waste too much time waiting for life to happen. Enough already, let’s take back control, throw away the technology that doesn’t serve us right. We believe, that to live life to the full, we sometimes need to move on.">
+
+  <meta name="description" content="Some people waste too much time waiting for life to happen. Enough already, let’s take back control, throw away the technology that doesn’t serve us right. We believe, that to live life to the full, we sometimes need to move on.">
+
+  <title>Greenlight — Apps for people who have better things to do</title>
+<link href="/main.9f8b4ae3689b18c371bd9b201053c11b.css" rel="stylesheet"></head>
+<body class="homepage">
+<!-- Google Tag Manager -->
+<noscript>
+  <iframe src="//www.googletagmanager.com/ns.html?id=GTM-PCRWZW"
+          height="0"
+          width="0"
+          style="display:none;visibility:hidden"></iframe>
+</noscript>
+<script>
+  (function (w, d, s, l, i) {
+    w[l] = w[l] || [];
+    w[l].push({
+      'gtm.start': new Date().getTime(),
+      event: 'gtm.js',
+    });
+    var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s),
+      dl = l != 'dataLayer' ? '&l=' + l : '';
+    j.async = true;
+    j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl;
+    f.parentNode.insertBefore(j, f);
+  })(window, document, 'script', 'dataLayer', 'GTM-PCRWZW');</script>
+<!-- End Google Tag Manager -->
+
+<nav id="mainNav"
+     class="navbar navbar-expand-md fixed-top navbar-dark">
+  <a class="navbar-brand"
+     href="/">
+    <img src="assets/images/svg/greenlight.svg"
+         class="img-svg"
+         alt="Greenlight">
+  </a>
+  <button class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navigation"
+          aria-controls="navigation"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse"
+       id="navigation">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link"
+           href="#products">Products</a>
+      </li>
+      <!--<li class="nav-item dropdown">-->
+      <!--<a class="nav-link dropdown-toggle"-->
+      <!--href="#"-->
+      <!--id="navbarDropdown"-->
+      <!--role="button"-->
+      <!--data-toggle="dropdown"-->
+      <!--aria-haspopup="true"-->
+      <!--aria-expanded="false">-->
+      <!--Products-->
+      <!--</a>-->
+      <!--<div class="dropdown-menu"-->
+      <!--aria-labelledby="navbarDropdown">-->
+      <!--<a class="dropdown-item d-none"-->
+      <!--href="#products"-->
+      <!--aria-hidden="true">void</a>-->
+      <!--<a class="dropdown-item"-->
+      <!--href="#">LOOP</a>-->
+      <!--<a class="dropdown-item"-->
+      <!--href="#">QUEST</a>-->
+      <!--<a class="dropdown-item"-->
+      <!--href="#">VISION</a>-->
+      <!--<a class="dropdown-item"-->
+      <!--href="#">BEAT</a>-->
+      <!--</div>-->
+      <!--</li>-->
+      <li class="nav-item">
+        <a class="nav-link"
+           href="#us">Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link"
+           href="#jobs">Jobs</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link"
+           href="#contact">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="content">
+  <section data-id="home"
+           class="hero text-center text-white full-height">
+    <div id="home"
+         class="anchor"></div>
+    <div class="fullscreen-bg">
+      <video id="bgVideo"
+             loop
+             muted
+             autoplay
+             poster="assets/images/video-poster.jpg"
+             class="fullscreen-bg__video">
+        <source src="assets/video/bg-video.mp4"
+                type="video/mp4">
+      </video>
+    </div>
+    <div class="container d-flex flex-column align-items-center h-100 justify-content-center">
+      <div id="progressCounter"
+           class="percentage"
+           style="width: 100%;">0%
+      </div>
+      <div class="progress mr-auto ml-auto"
+           style="width: 100%;">
+        <div id="progressBar"
+             class="progress-bar"
+             role="progressbar"
+             aria-valuenow="0"
+             aria-valuemin="0"
+             aria-valuemax="100"></div>
+      </div>
+      <p class="lead">
+        People waste too much time waiting for life to happen.<br>
+        We believe to live means to <a href="#products">move&nbsp;on&nbsp;<i class="far fa-arrow-down"></i></a>
+      </p>
+    </div>
+  </section>
+  <section data-id="products" class="bg-dark">
+    <div id="products"
+         class="anchor"></div>
+    <div class="products quadro">
+      <header class="text-center products__header quadro__header">
+        <div class="gls">
+          <img src="assets/images/svg/greenlight-g.svg"
+               alt=""
+               class="img-svg">
+        </div>
+        <h2 class="title">We build apps for<br> people who have better<br> things to do</h2>
+        <div class="button arrow d-lg-none">
+          <i class="far fa-arrow-down"></i>
+        </div>
+        <div class="button d-none d-lg-block">
+          <a href="#us"
+             class="link">About Greenlight</a>
+        </div>
+      </header>
+      <div class="row no-gutters">
+        <div class="col-12 col-md-6">
+          <a href="https://loop.gl/"
+             target="_blank"
+             class="product product--loop quadro__item"
+             style="background-image: url(assets/images/LOOPface_BLUEOVERLAY.jpg)">
+            <div class="product__logo">
+              <img src="./assets/images/svg/loop.svg"
+                   alt="LOOP.gl"
+                   class="img-svg">
+            </div>
+            <div class="product__text">
+              “At last, I can share big files<br>and collaborate in one space.”
+            </div>
+            <div class="product__link">
+              <span>See Loop.gl</span>
+            </div>
+          </a>
+        </div>
+        <div class="col-12 col-md-6">
+          <a href="https://quest.gl/"
+            target="_blank"
+            class="product product--quest product--right quadro__item"
+            style="background-image: url(assets/images/QUESTface_BW_ORANGEOVERLAY.jpg)">
+            <div class="product__logo">
+              <img src="./assets/images/svg/quest.svg"
+                   alt="QUEST.gl"
+                   class="img-svg">
+            </div>
+            <div class="product__text">
+              “Finally, I can build better teams<br>with the right skills and shared<br>sense of purpose.”
+            </div>
+            <div class="product__link">
+              <span>See Quest.gl</span>
+            </div>
+          </a>
+        </div>
+        <div class="col-12 col-md-6">
+          <a href="https://vibe.gl"
+             target="_blank"
+             class="product product--beat quadro__item"
+             style="background-image: url(assets/images/BEATface_PURPLEOVERLAY.jpg)">
+            <div class="product__logo">
+              <img src="./assets/images/svg/vibe.svg"
+                   alt="BEAT.gl"
+                   class="img-svg">
+            </div>
+            <div class="product__text">
+              “Awesome, company stuff<br>that I actually want to read.”
+            </div>
+            <div class="product__link">
+              <span>See Vibe.gl</span>
+            </div>
+          </a>
+        </div>
+        <div class="col-12 col-md-6">
+          <a href="https://vision.gl"
+             target="_blank"
+             class="product product--vision product--right quadro__item"
+             style="background-image: url(assets/images/VISION_overlay.jpg)">
+            <div class="product__logo">
+              <img src="./assets/images/svg/vision.svg"
+                   alt="VISION.gl"
+                   class="img-svg">
+            </div>
+            <div class="product__text">
+              “Now I can finally understand <br>what's happening in my store.”
+            </div>
+            <div class="product__link">
+              <span>See Vision.gl</span>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </div>
+    <div class="brands container text-center text-white">
+      <div class="row header">
+        <div class="col-12">
+          <h2 class="title">
+            We’ve grown up
+            working with the best</h2>
+        </div>
+        <div class="logos col-12">
+          <picture>
+            <source media="(min-width: 576px)"
+                    srcset="assets/images/brands/brands-md.svg">
+            <img src="assets/images/brands/brands-sm.svg">
+          </picture>
+        </div>
+        <div class="text col-12 col-lg-6 ml-lg-auto mr-lg-auto">
+          <p class="perex">
+            Collaborating, designing and developing apps
+            with some of the world's leading brands. </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="button col-12 text-center">
+          <a class="btn btn-outline-light" href="mailto:moveon@green-light.com">
+            READY TO TALK BUSINESS?
+            <!--&nbsp;&nbsp;<i class="far fa-arrow-right"></i>-->
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section data-id="us" class="bg-dark">
+    <div id="us"
+         class="anchor"></div>
+    <div class="quadro about">
+      <header class="text-center quadro__header">
+        <h2 class="title">We build<br>
+          what moves&nbsp;us</h2>
+        <p class="perex">
+          We are an international team of tech pioneers, creatives and coding wizards that strives to streamline the relationship between people and technology.
+        </p>
+        <div class="button arrow d-lg-none">
+          <i class="far fa-arrow-down"></i>
+        </div>
+        <div class="button d-none d-lg-block"><a href="#people"
+                                                 class="link">Meet us</a></div>
+      </header>
+      <div class="row no-gutters">
+        <div class="col-12 col-md-6">
+          <div class="quadro__item first"></div>
+        </div>
+        <div class="col-12 col-md-6">
+          <div class="quadro__item second"></div>
+        </div>
+        <div class="col-12 col-md-6">
+          <div class="quadro__item third"></div>
+        </div>
+        <div class="col-12 col-md-6">
+          <div class="quadro__item fourth"></div>
+        </div>
+      </div>
+    </div>
+    <div class="people position-relative">
+      <div id="people"
+           class="anchor"></div>
+      <header class="header text-center text-white">
+        <h2 class="title">Our kind of people. Are&nbsp;they yours?</h2>
+      </header>
+      <div class="scrollbox"
+           id="peopleSlider">
+        <button class="scrollbox-arrow scrollbox-prev">
+          <img src="assets/images/svg/arrow-left.svg"
+               alt=""
+               class="img-svg">
+        </button>
+        <button class="scrollbox-arrow scrollbox-next">
+          <img src="assets/images/svg/arrow-right.svg"
+               alt=""
+               class="img-svg">
+        </button>
+
+        <div class="scrollbox-inner">
+          <div class="person">
+            <div class="person__quote">
+              “Want to live a kick-ass life?
+              Go after it. Or you won’t have it.
+              Who waits, waits longest.”
+            </div>
+            <div class="person__image">
+              <img src="assets/images/people/tomas.jpg"
+                   alt="">
+            </div>
+            <div class="person__details">
+              <div class="person__name">Tomas Baca</div>
+              <div class="person__job">CEO, Founder</div>
+              <div class="person__social">
+                <nav class="nav">
+                  <a class="nav-link"
+                     href="https://www.linkedin.com/in/tomasbaca/"
+                     target="_blank"><i class="fab fa-linkedin"></i></a>
+                </nav>
+              </div>
+            </div>
+          </div>
+          <div class="person">
+            <div class="person__quote">
+              “People are talking about future of everything, we should talk about now. Instruments and solutions of the future already exist.”
+            </div>
+            <div class="person__image">
+              <img src="assets/images/people/betka.jpg"
+                   alt="">
+            </div>
+            <div class="person__details">
+              <div class="person__name">Alzbeta Mateju</div>
+              <div class="person__job">Innovation Strategist</div>
+              <div class="person__social">
+                <nav class="nav">
+                  <a class="nav-link"
+                     href="https://www.linkedin.com/in/alzbetamateju/"
+                     target="_blank"><i class="fab fa-linkedin"></i></a>
+                  <a href="https://www.instagram.com/bettys_tiger/"
+                     target="_blank"
+                     class="nav-link"><i class="fab fa-instagram"></i></a>
+                  <a class="nav-link"
+                     target="_blank"
+                     href="https://twitter.com/tyholky"><i class="fab fa-twitter"></i></a>
+                </nav>
+              </div>
+            </div>
+          </div>
+          <div class="person">
+            <div class="person__quote">
+              “The synonym of sophistication is simplicity!”
+            </div>
+            <div class="person__image">
+              <img src="assets/images/people/luky.jpg"
+                   alt="">
+            </div>
+            <div class="person__details">
+              <div class="person__name">Lukas Pohanka</div>
+              <div class="person__job">Designer</div>
+              <div class="person__social">
+                <nav class="nav">
+                  <a class="nav-link"
+                     target="_blank"
+                     href="https://www.linkedin.com/in/lukáš-pohanka-725a6453/"><i class="fab fa-linkedin"></i></a>
+                  <a class="nav-link"
+                     target="_blank"
+                     href="https://www.instagram.com/macikk1/"><i class="fab fa-instagram"></i></a>
+                </nav>
+              </div>
+            </div>
+          </div>
+          <div class="person">
+            <div class="person__quote">
+              “If you lose the power to laugh, you lose the power to think.”
+              (Clarence Darrow)
+            </div>
+            <div class="person__image">
+              <img src="assets/images/people/misa.jpg"
+                   alt="">
+            </div>
+            <div class="person__details">
+              <div class="person__name">Michaela Brukova</div>
+              <div class="person__job">
+                Senior Account Manager
+              </div>
+              <div class="person__social">
+                <nav class="nav">
+                  <a class="nav-link"
+                     target="_blank"
+                     href="https://www.linkedin.com/in/michaela-brukova-92b37672/"><i class="fab fa-linkedin"></i></a>
+                  <a class="nav-link"
+                     target="_blank"
+                     href="https://www.instagram.com/michaela.br/"><i class="fab fa-instagram"></i></a>
+                </nav>
+              </div>
+            </div>
+          </div>
+          <div class="person">
+            <div class="person__quote">
+              “Agile is not anarchy.”
+            </div>
+            <div class="person__image">
+              <img src="assets/images/people/banan.jpg"
+                   alt="">
+            </div>
+            <div class="person__details">
+              <div class="person__name">Martin Adamek</div>
+              <div class="person__job">
+                Fullstack Developer
+              </div>
+              <div class="person__social">
+                <nav class="nav">
+                  <a class="nav-link"
+                     target="_blank"
+                     href="https://www.linkedin.com/in/b4nan/"><i class="fab fa-linkedin"></i></a>
+                  <a class="nav-link"
+                     target="_blank"
+                     href="https://twitter.com/@b4nan"><i class="fab fa-twitter"></i></a>
+                </nav>
+              </div>
+            </div>
+          </div>
+          <div class="person">
+            <div class="person__quote">
+              “Look at usual things with unusual eyes.” (Vico Magistretti)
+            </div>
+            <div class="person__image">
+              <img src="assets/images/people/iva.jpg"
+                   alt="">
+            </div>
+            <div class="person__details">
+              <div class="person__name">Iva Serikova</div>
+              <div class="person__job">
+                Designer
+              </div>
+              <div class="person__social">
+                <nav class="nav">
+                  <a class="nav-link"
+                     target="_blank"
+                     href="https://www.linkedin.com/in/ivaserikova/"><i class="fab fa-linkedin"></i></a>
+                  <a class="nav-link"
+                     target="_blank"
+                     href="https://www.instagram.com/iva.serikova/"><i class="fab fa-instagram"></i></a>
+                </nav>
+              </div>
+            </div>
+          </div>
+          <div class="person">
+            <div class="person__quote">
+              “Skate to where the puck is going to be, not where it has been” (Wayne Gretzky)
+            </div>
+            <div class="person__image">
+              <img src="assets/images/people/boris.jpg"
+                   alt="">
+            </div>
+            <div class="person__details">
+              <div class="person__name">Boris Kovac</div>
+              <div class="person__job">
+                Global Innovation Manager
+              </div>
+              <div class="person__social">
+                <nav class="nav">
+                  <a class="nav-link"
+                     target="_blank"
+                     href="https://www.linkedin.com/in/boriskovac"><i class="fab fa-linkedin"></i></a>
+                </nav>
+              </div>
+            </div>
+          </div>
+          <div class="person">
+            <div class="person__quote">
+              “The biggest reward for me is to see how products that I create help lots of people daily.”
+            </div>
+            <div class="person__image">
+              <img src="assets/images/people/sasha.jpg"
+                   alt="">
+            </div>
+            <div class="person__details">
+              <div class="person__name">Alexander Semerenko</div>
+              <div class="person__job">
+                Product Manager Quest.gl
+              </div>
+              <div class="person__social">
+                <nav class="nav">
+                  <a class="nav-link"
+                     target="_blank"
+                     href="https://www.linkedin.com/in/semerenko/"><i class="fab fa-linkedin"></i></a>
+                </nav>
+              </div>
+            </div>
+          </div>
+          <div class="person">
+            <div class="person__quote">
+              “Average is good for boring people. At Greenlight only sky is the limit.”
+            </div>
+            <div class="person__image">
+              <img src="assets/images/people/jarda.jpg"
+                   alt="">
+            </div>
+            <div class="person__details">
+              <div class="person__name">Jaroslav Soucek</div>
+              <div class="person__job">
+                Concept Supervisor
+              </div>
+              <div class="person__social">
+                <nav class="nav">
+                  <a class="nav-link"
+                     target="_blank"
+                     href="https://www.linkedin.com/in/jaroslavsoucek"><i class="fab fa-linkedin"></i></a>
+                  <a class="nav-link"
+                     target="_blank"
+                     href="https://twitter.com/jsoucek"><i class="fab fa-twitter"></i></a>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="people-text text-center text-white">
+      Want to know what it’s like working with Greenlight? Check out our
+      <a href="https://www.cocuma.cz/company/greenlight/"
+         target="_blank">Cocuma page</a>.
+    </div>
+  </section>
+  <section data-id="jobs" class="jobs text-center">
+    <div id="jobs"
+         class="anchor"></div>
+    <header class="header text-white">
+      <h2 class="title">Join the Force</h2>
+    </header>
+    <div class="jobs__thumb d-md-none">
+      <img src="assets/images/jobs-bg.jpg"
+           alt="">
+    </div>
+    <div class="jobs__image d-flex justify-content-center align-items-center">
+      <div>
+        <a href="https://greenlight.bamboohr.co.uk/jobs/"
+           target="_blank"
+           class="btn btn-outline-light">See open positions&nbsp;&nbsp;<i class="far fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+  <section data-id="contact"
+           class="contact bg-dark">
+    <div id="contact"
+         class="anchor"></div>
+    <div class="row no-gutters">
+      <div class="col-12 col-md-6 text-center text-md-right contact-details">
+        <header class="header text-white">
+          <h2 class="title">Get in touch</h2>
+        </header>
+        <div class="contacts">
+          <a href="mailto:hello@green-light.com">hello@green-light.com</a><br>
+          <a href="tel:+420727857915">+420 727 857 915</a>
+        </div>
+        <nav class="nav justify-content-center justify-content-md-end">
+          <a class="nav-link"
+             target="_blank"
+             href="https://www.linkedin.com/company/15180754/"><i class="fab fa-linkedin"></i></a>
+          <a class="nav-link"
+             target="_blank"
+             href="https://www.facebook.com/Greenlight-1143592165731435/"><i class="fab fa-facebook"></i></a>
+          <a class="nav-link"
+             target="_blank"
+             href="https://www.instagram.com/hellogreenlight/"><i class="fab fa-instagram"></i></a>
+          <a class="nav-link"
+             target="_blank"
+             href="https://twitter.com/GreenlightGLS"><i class="fab fa-twitter"></i></a>
+        </nav>
+        <div class="address">
+          Vyskočilova 1561/4A<br>
+          140 00 Prague 4<br>
+          Czech Republic<br>
+          <a class="d-md-none font-weight-bold"
+             style="text-decoration: underline"
+             href="https://goo.gl/maps/9hkr7EkUqi12"
+             target="_blank">Show on map</a>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 bg-light"
+           id="map">
+
+      </div>
+    </div>
+  </section>
+</div>
+
+<footer class="main-footer bg-black">
+  <div class="text-center">
+    Greenlight &copy; 2018 All Rights Reserved
+  </div>
+</footer>
+
+<script async
+        defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyATYrdDEPGUWt_oPVIxo914EH92t4qjKAA&callback=initMap"
+        type="text/javascript"></script>
+<script type="text/javascript">
+  function initMap() {
+    // Basic options for a simple Google Map
+    // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+    var mapOptions = {
+      // How zoomed in you want the map to start at (always required)
+      zoom: 4,
+
+      // The latitude and longitude to center the map (always required)
+      center: new google.maps.LatLng(50.047988, 14.457375), // New York
+
+      // How you would like to style the map.
+      // This is where you would paste any style found on Snazzy Maps.
+      styles: [{
+        'featureType': 'all',
+        'elementType': 'labels.text.fill',
+        'stylers': [{ 'saturation': 36 }, { 'color': '#000000' }, { 'lightness': 40 }],
+      }, {
+        'featureType': 'all',
+        'elementType': 'labels.text.stroke',
+        'stylers': [{ 'visibility': 'on' }, { 'color': '#000000' }, { 'lightness': 16 }],
+      }, {
+        'featureType': 'all',
+        'elementType': 'labels.icon',
+        'stylers': [{ 'visibility': 'off' }],
+      }, {
+        'featureType': 'administrative',
+        'elementType': 'geometry.fill',
+        'stylers': [{ 'color': '#000000' }, { 'lightness': 20 }],
+      }, {
+        'featureType': 'administrative',
+        'elementType': 'geometry.stroke',
+        'stylers': [{ 'color': '#000000' }, { 'lightness': 17 }, { 'weight': 1.2 }],
+      }, {
+        'featureType': 'landscape',
+        'elementType': 'geometry',
+        'stylers': [{ 'color': '#000000' }, { 'lightness': 20 }],
+      }, {
+        'featureType': 'poi',
+        'elementType': 'geometry',
+        'stylers': [{ 'color': '#000000' }, { 'lightness': 21 }],
+      }, {
+        'featureType': 'road.highway',
+        'elementType': 'geometry.fill',
+        'stylers': [{ 'color': '#000000' }, { 'lightness': 17 }],
+      }, {
+        'featureType': 'road.highway',
+        'elementType': 'geometry.stroke',
+        'stylers': [{ 'color': '#000000' }, { 'lightness': 29 }, { 'weight': 0.2 }],
+      }, {
+        'featureType': 'road.arterial',
+        'elementType': 'geometry',
+        'stylers': [{ 'color': '#000000' }, { 'lightness': 18 }],
+      }, {
+        'featureType': 'road.local',
+        'elementType': 'geometry',
+        'stylers': [{ 'color': '#000000' }, { 'lightness': 16 }],
+      }, {
+        'featureType': 'transit',
+        'elementType': 'geometry',
+        'stylers': [{ 'color': '#000000' }, { 'lightness': 19 }],
+      }, {
+        'featureType': 'water',
+        'elementType': 'geometry',
+        'stylers': [{ 'color': '#000000' }, { 'lightness': 17 }],
+      },
+      ],
+
+      disableDefaultUI: true,
+      zoomControl: true,
+    };
+
+    // Get the HTML DOM element that will contain your map
+    // We are using a div with id="map" seen below in the <body>
+    var mapElement = document.getElementById('map');
+
+    // Create the Google Map using our element and options defined above
+    var map = new google.maps.Map(mapElement, mapOptions);
+
+    // Let's also add a marker while we're at it
+    var marker = new google.maps.Marker({
+      position: new google.maps.LatLng(50.047988, 14.457375),
+      map: map,
+      icon: './assets/images/svg/map-marker.svg',
+    });
+
+    google.maps.event.addListener(marker, 'click', function () {
+      window.open('https://goo.gl/maps/9hkr7EkUqi12', '_blank');
+    });
+  }
+</script>
+
+<script type="text/javascript" src="/main.e8687fe95bd65da0b88f.js"></script></body>
+</html>
